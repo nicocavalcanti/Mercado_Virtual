@@ -11,4 +11,4 @@ cidade varchar(40),
 numero_celular fixed(00000000000),
 
 Primary Key (ID)) ENGINE = MyISAM;
-select * from usuarios;
+-- select * from usuarios;
