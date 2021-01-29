@@ -3,34 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD:telaCadastro.html
-    <title> Cadastro de usuário  </title>
-=======
+    <link rel="stylesheet" href="CSS/styleCadastro.css">
+
     <title>Cadastro de usuário</title>
->>>>>>> 9782fd43093b2388ecc40b95afc2651f2b6406c2:register.php
+
 </head>
 <body>
-    <main class="">  
+    <main class="container">  
         <h2>Cadastramento</h2>
         <form action="">
-            <div class="">
-                <input type="text" name="username" id="username" placeholder="Digite seu nome completo">
+            <div class="input-field">
+                <input type="text" name="username" id="username" placeholder="Nome completo">
                 <div class="underline"></div>
              </div>
-             <div class="">
-                <input type="text" name="username" id="username" placeholder="Digite sua cidade">
+             <div class="input-field">
+                <input type="text" name="username" id="username" placeholder="Sua cidade">
                 <div class="underline"></div>
              </div>
-             <div class="">
-                <input type="text" name="username" id="username" placeholder="Digite seu contato telefônico">
+             <div class="input-field">
+                <input type="text" name="username" id="username" placeholder="Contato">
                 <div class="underline"></div>
              </div>
-             <div class="">
-                <input type="text" name="username" id="username" placeholder="Crie um nome de usuário">
+             <div class="input-field">
+                <input type="text" name="username" id="username" placeholder="Nome de usuário">
                 <div class="underline"></div>
              </div>
-             <div class="">
-                <input type="password" name="username" id="username" placeholder="Crie uma senha">
+             <div class="input-field">
+                <input type="password" name="username" id="username" placeholder="Senha">
                 <div class="underline"></div>
              </div>
              
