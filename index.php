@@ -38,7 +38,7 @@ include_once("connection.php");
             <span>Você é cadastrado no PotiCars?</span>
             <div class="social-fields">
                 <div class="social-field.google">
-                    <a href="register.html" target="_blanck">
+                    <a href="register.php" target="_blanck">
                         <i class="fab fa-google-plus-g"></i> 
                         Cadastre-se
                     </a>
