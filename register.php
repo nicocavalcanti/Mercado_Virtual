@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD:telaCadastro.html
     <title> Cadastro de usuário  </title>
+=======
+    <title>Cadastro de usuário</title>
+>>>>>>> 9782fd43093b2388ecc40b95afc2651f2b6406c2:register.php
 </head>
 <body>
     <main class="">  
