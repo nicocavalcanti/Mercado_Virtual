@@ -25,6 +25,10 @@
                 <div class="underline"></div>
              </div>
              <div class="input-field">
+                <input type="text" name="username" id="username" placeholder="E-mail">
+                <div class="underline"></div>
+             </div>
+             <div class="input-field">
                 <input type="text" name="username" id="username" placeholder="Nome de usuário">
                 <div class="underline"></div>
              </div>

@@ -20,7 +20,7 @@ include_once("connection.php");
 <body>
     
     <main class="container">  
-        <h2>Login</h2>
+        <h2>Login PotiCars</h2>
         <form action="BACKEND/verifyLogin.php" method="get"> <!--post não mostra, o get mostra  -->
             <div class="input-field">
                 <input type="text" name="username" id="username" placeholder="Usuário">
