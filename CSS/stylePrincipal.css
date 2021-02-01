@@ -34,9 +34,10 @@
 }
 
 .anuncio {
+    width: 100vw;
     display: flex;
     background: linear-gradient(45deg, #5f6361,  #515554);
-    padding: 10px 10px;
-    margin: 10px 10px;
+    /*padding: 10px 10px;*/
+    /*margin: 10px 10px;*/
    
 }
