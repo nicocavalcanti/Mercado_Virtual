@@ -5,7 +5,7 @@ if($_SESSION["user"]){
     //header("location: main");
     exit();
 }
-include_once("connection.php");
+include_once("BACKEND/connection.php");
 ?>
 <!DOCTYPE html>
 <html lang="PT-BR">
@@ -21,7 +21,7 @@ include_once("connection.php");
     
     <main class="container">  
         <h2>Login PotiCars</h2>
-        <form action="BACKEND/verifyLogin.php" method="get"> <!--post não mostra, o get mostra  -->
+        <form action="BACKEND/verifyLogin" method="post"> <!--post não mostra, o get mostra  -->
             <div class="input-field">
                 <input type="text" name="username" id="username" placeholder="Usuário">
                 <div class="underline"></div>

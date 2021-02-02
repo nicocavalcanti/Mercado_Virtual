@@ -11,29 +11,29 @@
 <body>
     <main class="container">  
         <h2>Cadastramento</h2>
-        <form action="">
+        <form action="BACKEND/registerLogin" method="post">
             <div class="input-field">
-                <input type="text" name="username" id="username" placeholder="Nome completo">
+                <input type="text" name="completName" placeholder="Nome completo">
                 <div class="underline"></div>
              </div>
              <div class="input-field">
-                <input type="text" name="username" id="username" placeholder="Sua cidade">
+                <input type="text" name="city" placeholder="Sua cidade">
                 <div class="underline"></div>
              </div>
              <div class="input-field">
-                <input type="text" name="username" id="username" placeholder="Contato">
+                <input type="text" name="contact" placeholder="Contato">
                 <div class="underline"></div>
              </div>
              <div class="input-field">
-                <input type="text" name="username" id="username" placeholder="E-mail">
+                <input type="text" name="email" placeholder="E-mail">
                 <div class="underline"></div>
              </div>
              <div class="input-field">
-                <input type="text" name="username" id="username" placeholder="Nome de usuário">
+                <input type="text" name="username" placeholder="Nome de usuário">
                 <div class="underline"></div>
              </div>
              <div class="input-field">
-                <input type="password" name="username" id="username" placeholder="Senha">
+                <input type="password" name="password" placeholder="Senha">
                 <div class="underline"></div>
              </div>
              
