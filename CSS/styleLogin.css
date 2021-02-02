@@ -151,4 +151,22 @@ form input[type="submit"]:hover {
 
 .footer .social-field.google{
     background: linear-gradient(to right, #56f2c3, #46ca8c);
+}.erro{
+    display: flexbox;
+    position: absolute;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    background-color: rgb(255, 248, 220);
+    border-radius: 20px;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.4);
+    color: rgb(153, 13, 13);
+}.erro:hover{
+    background-color: rgb(250, 240, 210);
 }

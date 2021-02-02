@@ -1,52 +1,42 @@
-<?php
-error_reporting(0);
-session_start();
-if($_SESSION["user"]){
-    //header("location: main");
-    exit();
-}
-include_once("BACKEND/connection.php");
-?>
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
- 
-    <title>PotiCars - Um mercado virtual Potiguar de vendas automotivas </title>
-    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>PotiCars- Um Mercado Virtual Potiguar de Vendas Automotiva</title>
+    <link rel="stylesheet" href="CSS/stylePrincipal.css">
 </head>
 <body>
-    
-    <main class="container">  
-        <h2>Login PotiCars</h2>
-        <form action="BACKEND/verifyLogin" method="post"> <!--post não mostra, o get mostra  -->
-            <div class="input-field">
-                <input type="text" name="username" id="username" placeholder="Usuário">
-                <div class="underline"></div>
-             </div>
-             <div class="input-field">
-                <input type="password" name="password" id="password" placeholder="Senha">
-                <div class="underline"></div>
-             </div>
+    <div class="menu">
+       
+        <ul> 
             
-            <input type="submit" value="Entrar">
-             
-        </form>
-        <div class="footer">
-            <span>Você é cadastrado no PotiCars?</span>
-            <div class="social-fields">
-                <div class="social-field.google">
-                    <a href="register" >
-                        <i class="fab fa-google-plus-g"></i> 
-                        Cadastre-se
-                    </a>
-                </div>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Anunciar</a></li>
+            <li><a href="#">Chat</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li class="entrar"><a href="index.php">Entrar</a></li>
+            
+         
+            <input type="search" placeholder="Pesquise...">
+            <input type="submit" value="Pesquisar">
+           
+           
+            
+        </ul>
+        
+    </div>
+   
+    <div class="anuncio">
+        <div class="anuncio">a</div>
+        <div class="anuncio">a</div>
+        <div class="anuncio">a</div>
+        <div class="anuncio">a</div>
+           
 
-            </div>
-        </div>
-    </main>
+
+    </div>
     
 </body>
 </html>

@@ -2,11 +2,11 @@
 session_start();
 include_once("../connection.php");//conexão com o banco de dados
 
-//verificar se um ou os dois campus estão vazio
+//verificar se um ou os dois campus estão vaziu
 if(empty($_POST["username"]) || empty($_POST["password"])) { 
-	//$_SESSION['vazio']=true;
-	//$_SESSION['não_autenticado']=false;
-    header("location: ../index");
+	$_SESSION['vaziu']=true;
+	$_SESSION['não_autenticado']=false;
+    header("location: ../login");
     exit();
 }
 $usuario = $_POST['username'];
@@ -28,16 +28,16 @@ if($result->rowCount() == 1){
 	login='{$usuario}' and senha='{$senha}'")->fetch(PDO::FETCH_OBJ);
 
 	$_SESSION['user'] = $nome->nome;//adicionar valor a sessão
-	//unset($_SESSION["não_autenticado"]);//destruir a seção não_autenticado || usado para mensagem de erro
-	//unset($_SESSION["vazio"]);// destruir a seção vazio || usado para mensagem de erro
-	//header("location: ../main");//ir para outra pagina
+	unset($_SESSION["não_autenticado"]);//destruir a seção não_autenticado || usado para mensagem de erro
+	unset($_SESSION["vaziu"]);// destruir a seção vaziu || usado para mensagem de erro
+	header("location: ../login");//ir para outra pagina
 	exit();
 }
 // se não existir voltarar para a pagina para efetuar login
 else{
-	//$_SESSION['vazio']=false;//destruir a seção não_autenticado || usado para mensagem de erro
-	//$_SESSION['não_autenticado']=true;//destruir a seção não_autenticado || usado para mensagem de erro
-	header("location: ../index");//voltar para o index.php voltar pagina inicial
+	$_SESSION['vaziu']=false;//destruir a seção não_autenticado || usado para mensagem de erro
+	$_SESSION['não_autenticado']=true;//destruir a seção não_autenticado || usado para mensagem de erro
+	header("location: ../login");//voltar para o index.php voltar pagina inicial
     exit();
 }
 
