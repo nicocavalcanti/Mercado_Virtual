@@ -1,112 +1,133 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styleAnuciar.css">
     <title>Anunciar</title>
 </head>
+
 <body>
-   
-    <input type="file" Value ="insira imagens" accept="image/*">
-    
-    <form>
-        Marca:<br>
-		<select name="select-simples-grande" class=""  >
-           
-			<option value="">Fiat</option>
-			<option value="">VW - Volkswagem</option>
-			<option value="">Ford</option>
-			<option value="">Land Rover</option>
-		    <option value="">Mercedes</option>
-			<option value="">BMW</option>
-			<option value="">Audi</option>
-			<option value="">Chery</option>
-			<option value="">Jeep</option>
-			<option value="">Honda</option>
-			<option value="">Hyundai</option>
-            <option value="">GM - Chevrolet</option>
-            <option value="">Jac</option>
-            <option value="">Citroen</option>
-            <option value="">Toyota</option>
-            <option value="">Mitsubishi</option>
-            <option value="">Kia Motors</option>
-            <option value="">Suzuki</option>
-            <option value="">Renault</option>
-            <option value="">Nissan</option>
+    <main class="container">
+        <h2>Anunciando...</h2>
+        <input type="file" Value="insira imagens" accept="image/*" multiple="multiple">
 
-            
-        </select>
-    </form>
-    
-    <form>
-        Modelo: <br>
-		<select name="select-simples-grande" class=""  >
-            <!--Utilizar IF:  se modelo for igual a Fiat apresentar modelos Fiat-->
-			<option value="">Model</option>
-			<option value="">Model</option>
-			<option value="">Model</option>
-			<option value="">Model</option>
-		    <option value="">Model</option>
-			<option value="">Model</option>
-			<option value="">Model</option>
-			<option value="">Model</option>
-			<option value="">Model</option>
-			<option value="">Model</option>
-			<option value="">Model</option>
-            <option value="">Model</option>
-            <option value="">Model</option>
-            <option value="">Model</option>
-            <option value="">Model</option>
-            <option value="">Model</option>
-            <option value="">Model</option>
-            <option value="">Model</option>
-            <option value="">Model</option>
-        <option value="">Nissan</option>
+        <form>
 
-            
-        </select>
-    </form>
-    Cidade:<br>
-    <form>
-		<select name="select-simples-grande" class="" >
-			<option value="">Acari</option>
-			<option value="">Afonso Bezerra</option>
-			<option value="">Alexandria</option>
-			<option value="">Serrinha</option>
-		    <option value="">Santo Antônio</option>
-			<option value="">Nova Cruz</option>
-			<option value="">Natal</option>
-			<option value="">Boa Saúde</option>
-			<option value="">Tibal do Sul</option>
-			<option value="">Parnamirim</option>
-			<option value="">Goinaninha</option>
-		    <option value="">Brejinho</option>
-        </select>
-    </form>
-    Quilometragem:<br>
-    <input type="text" placeholder="Ex.: 200.000Km">
-    <br>Valor:<br>
-    <input type="Valor" placeholder="Ex.: 20.000">
-    <br>Opcionais:<br>
-    <input type="checkbox">Ar
-    <input type="checkbox">Vidro
-    <input type="checkbox">Sensor
-    <input type="checkbox">Direção
-    <input type="checkbox">Som
-    <input type="checkbox">Alarme
-    <input type="checkbox">Travas
-    <br>Ano:<br>
-    <input type="text" placeholder="00/00/0000" maxlength="10">
-    <br> Tipo de Combustivel:<br>
-    <input type="checkbox">Flex
-    <input type="checkbox">Gasolina
-    <input type="checkbox">Etanol
-    <input type="checkbox">Diesel
-    <input type="checkbox">GNV
-    <br>Descrição do Veículo:
-    <br><textarea name="" id="" cols="30" rows="10" placeholder="Digite um resumo do veiculo"></textarea>
-    <br><input type="submit" value="Anunciar">
-    
-    
+            <div class="input-field">
+
+                <select name="select-simples-grande" class="">
+
+                    <option value="">Fiat</option>
+                    <option value="">VW - Volkswagem</option>
+                    <option value="">Ford</option>
+                    <option value="">Land Rover</option>
+                    <option value="">Mercedes</option>
+                    <option value="">BMW</option>
+                    <option value="">Audi</option>
+                    <option value="">Chery</option>
+                    <option value="">Jeep</option>
+                    <option value="">Honda</option>
+                    <option value="">Hyundai</option>
+                    <option value="">GM - Chevrolet</option>
+                    <option value="">Jac</option>
+                    <option value="">Citroen</option>
+                    <option value="">Toyota</option>
+                    <option value="">Mitsubishi</option>
+                    <option value="">Kia Motors</option>
+                    <option value="">Suzuki</option>
+                    <option value="">Renault</option>
+                    <option value="">Nissan</option>
+                </select>
+                <select name="select-simples-grande" class="">
+                    <!--Utilizar IF:  se modelo for igual a Fiat apresentar modelos Fiat-->
+                    <option value="">Grand Siena</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Model</option>
+                    <option value="">Nissan</option>
+
+                </select>
+                <div class="underline"></div>
+            </div>
+
+            <div class="input-field">
+
+                <select name="" id="">
+                    <option value="">RN - Rio Grande do Norte</option>
+                </select>
+                <select name="select-simples-grande" class="">
+                    <option value="">Acari</option>
+                    <option value="">Afonso Bezerra</option>
+                    <option value="">Alexandria</option>
+                    <option value="">Serrinha</option>
+                    <option value="">Santo Antônio</option>
+                    <option value="">Nova Cruz</option>
+                    <option value="">Natal</option>
+                    <option value="">Boa Saúde</option>
+                    <option value="">Tibal do Sul</option>
+                    <option value="">Parnamirim</option>
+                    <option value="">Goinaninha</option>
+                    <option value="">Brejinho</option>
+                </select>
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Ex.: 200.000Km">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="Valor" placeholder="Ex.: 20.000">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="checkbox" >Ar
+                <input type="checkbox" >Vidro
+                <input type="checkbox" >Sensor
+                <input type="checkbox" >Direção<br>
+                <input type="checkbox" >Som
+                <input type="checkbox" >Alarme
+                <input type="checkbox" >Travas
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="00/00/0000" maxlength="10">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="checkbox">Flex
+                <input type="checkbox" >Gasolina
+                <input type="checkbox" >Etanol
+                <input type="checkbox" >Diesel
+                <input type="checkbox" >GNV
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <textarea name="" id="" cols="30" rows="1" placeholder="Digite um resumo do veiculo"></textarea>
+                <div class="underline"></div>
+            </div>
+        </form>
+
+        <form>
+            <br><input type="submit" value="Anunciar">
+        </form>
+    </main>
 </body>
+
 </html>
