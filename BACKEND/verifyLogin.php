@@ -3,14 +3,14 @@ session_start();
 include_once("../connection.php");//conexão com o banco de dados
 
 //verificar se um ou os dois campus estão vazio
-if(empty($_GET["username"]) || empty($_GET["password"])) { 
+if(empty($_POST["username"]) || empty($_POST["password"])) { 
 	//$_SESSION['vazio']=true;
 	//$_SESSION['não_autenticado']=false;
     header("location: ../index");
     exit();
 }
-$usuario = $_GET['username'];
-$senha = $_GET['password'];
+$usuario = $_POST['username'];
+$senha = $_POST['password'];
 
 //verificação no banco de dado
 $query=$pdo->prepare("select ID, login from usuarios where login=? and senha=?");//stamente do pdo

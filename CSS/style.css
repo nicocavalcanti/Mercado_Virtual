@@ -12,14 +12,16 @@ body {
     /*background: linear-gradient(45deg, #2de278, #008b56);
     background-repeat: no-repeat;*/
     padding-top: 5vh;
-    background-image: url(7994340223_15e4a42c45_k4.jpeg);
+    background-image: url(https://viagemeturismo.abril.com.br/wp-content/uploads/2016/12/7994340223_15e4a42c45_k4.jpeg);
     background-size:cover;
-    background-position-y:-150px;
+    /*background-position-y:-150px;*/
+    background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 
