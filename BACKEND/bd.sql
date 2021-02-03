@@ -41,6 +41,7 @@ create table carros(
  date_final datetime,
  preco_inicial float,
  preco_final float,
+ foreign key(id_usuario) references usuarios(id_usuario),
  primary key(id_pesquisa)
  
  );
