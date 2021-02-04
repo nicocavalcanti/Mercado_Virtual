@@ -89,7 +89,7 @@
                 <div class="underline"></div>
             </div>
             <div class="input-field">
-                <input type="text" placeholder="Ex.: 200.000Km">
+                sad<input type="text" placeholder="Ex.: 200.000Km">
                 <div class="underline"></div>
             </div>
             <div class="input-field">

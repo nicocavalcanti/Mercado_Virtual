@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("../connection.php");//conexão com o banco de dados
+include_once("connection.php");//conexão com o banco de dados
 
 //verificar se um ou os dois campus estão vaziu
 if(empty($_POST["username"]) || empty($_POST["password"])) { 
@@ -30,7 +30,7 @@ if($result->rowCount() == 1){
 	$_SESSION['user'] = $nome->nome;//adicionar valor a sessão
 	unset($_SESSION["não_autenticado"]);//destruir a seção não_autenticado || usado para mensagem de erro
 	unset($_SESSION["vaziu"]);// destruir a seção vaziu || usado para mensagem de erro
-	header("location: ../login");//ir para outra pagina
+	header("location: ../index");//ir para outra pagina
 	exit();
 }
 // se não existir voltarar para a pagina para efetuar login

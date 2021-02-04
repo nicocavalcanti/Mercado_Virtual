@@ -13,10 +13,10 @@
         <ul> 
             
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Anunciar</a></li>
+            <li><a href="anunciar">Anunciar</a></li>
             <li><a href="#">Chat</a></li>
             <li><a href="#">Sobre</a></li>
-            <li class="entrar"><a href="index.php">Entrar</a></li>
+            <li class="entrar"><a href="login">Entrar</a></li>
             
          
             <input type="search" placeholder="Pesquise...">

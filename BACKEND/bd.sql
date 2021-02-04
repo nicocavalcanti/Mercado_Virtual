@@ -1,5 +1,5 @@
 create database bd;
-#drop database bd;
+-- drop database bd;
 use bd;
 
 Create table usuarios (
@@ -16,7 +16,7 @@ create table carros(
  chassi char NOT NULL,
  marca varchar (40) not null,
  modelo varchar(40) not null,
- ano char(4)not null,
+ ano char(4) not null,
  cor varchar(40),
  combustivel varchar(40),
  primary key (chassi)
