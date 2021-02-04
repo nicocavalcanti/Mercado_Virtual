@@ -8,7 +8,7 @@ apelido_usuario varchar(17) not null,
 senha Varchar(40) not null,
 nome varchar(55) not null,
 cidade varchar(40) not null,
-email varchar(50)not null,
+email varchar(50)not null unique,
 numero_celular char(14),
 Primary Key (apelido_usuario)
 );
