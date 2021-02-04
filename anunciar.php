@@ -11,38 +11,37 @@
 <body>
     <main class="container">
         <h2>Anunciando...</h2>
-        <input type="file" Value="insira imagens" accept="image/*" multiple="multiple">
+        
 
         <form>
 
             <div class="input-field">
-
-                <select name="select-simples-grande" class="">
-
-                    <option value="">Fiat</option>
-                    <option value="">VW - Volkswagem</option>
-                    <option value="">Ford</option>
-                    <option value="">Land Rover</option>
-                    <option value="">Mercedes</option>
-                    <option value="">BMW</option>
-                    <option value="">Audi</option>
-                    <option value="">Chery</option>
-                    <option value="">Jeep</option>
-                    <option value="">Honda</option>
-                    <option value="">Hyundai</option>
-                    <option value="">GM - Chevrolet</option>
-                    <option value="">Jac</option>
-                    <option value="">Citroen</option>
-                    <option value="">Toyota</option>
-                    <option value="">Mitsubishi</option>
-                    <option value="">Kia Motors</option>
-                    <option value="">Suzuki</option>
-                    <option value="">Renault</option>
-                    <option value="">Nissan</option>
+                <input type="file" name="arquivo" Value="insira imagens" accept="image/*" multiple="multiple">
+                <select name="modelo" class="">
+                    <option value="Fiat">Fiat</option>
+                    <option value="Volkswagem">VW - Volkswagem</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Land Rover">Land Rover</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Chery">Chery</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Chevrolet">GM - Chevrolet</option>
+                    <option value="Jac">Jac</option>
+                    <option value="Citroen">Citroen</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Mitsubishi">Mitsubishi</option>
+                    <option value="Kia Motors">Kia Motors</option>
+                    <option value="Suzuki">Suzuki</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Nissan">Nissan</option>
                 </select>
                 <select name="select-simples-grande" class="">
                     <!--Utilizar IF:  se modelo for igual a Fiat apresentar modelos Fiat-->
-                    <option value="">Grand Siena</option>
+                    <option value="Grand Siena">Grand Siena</option>
                     <option value="">Model</option>
                     <option value="">Model</option>
                     <option value="">Model</option>
@@ -61,7 +60,7 @@
                     <option value="">Model</option>
                     <option value="">Model</option>
                     <option value="">Model</option>
-                    <option value="">Nissan</option>
+                    <option value="Nissan">Nissan</option>
 
                 </select>
                 <div class="underline"></div>
@@ -69,10 +68,10 @@
 
             <div class="input-field">
 
-                <select name="" id="">
+                <select name="estado" id="">
                     <option value="">RN - Rio Grande do Norte</option>
                 </select>
-                <select name="select-simples-grande" class="">
+                <select name="cidade" class="">
                     <option value="">Acari</option>
                     <option value="">Afonso Bezerra</option>
                     <option value="">Alexandria</option>
@@ -89,42 +88,40 @@
                 <div class="underline"></div>
             </div>
             <div class="input-field">
-                sad<input type="text" placeholder="Ex.: 200.000Km">
+                KM rodados: <input type="text" name="KMrodado" placeholder="Ex.: 200.000Km">
                 <div class="underline"></div>
             </div>
             <div class="input-field">
-                <input type="Valor" placeholder="Ex.: 20.000">
+                Preço: <input type="Valor" name="preco" placeholder="Ex.: 20.000">
                 <div class="underline"></div>
             </div>
             <div class="input-field">
-                <input type="checkbox" >Ar
-                <input type="checkbox" >Vidro
-                <input type="checkbox" >Sensor
-                <input type="checkbox" >Direção<br>
-                <input type="checkbox" >Som
-                <input type="checkbox" >Alarme
-                <input type="checkbox" >Travas
+                <label><input type="checkbox" >Ar Condicionado</label><br>
+                <label><input type="checkbox" >Vidro Elétrico</label><br>
+                <label><input type="checkbox" >Sensor</label><br>
+                <label><input type="checkbox" >Direção</label><br>
+                <label><input type="checkbox" >Som</label><br>
+                <label><input type="checkbox" >Alarme</label><br>
+                <label><input type="checkbox" >Travas</label><br>
                 <div class="underline"></div>
             </div>
             <div class="input-field">
-                <input type="text" placeholder="00/00/0000" maxlength="10">
+                Ano: <input type="text" placeholder="00/00/0000" maxlength="10">
                 <div class="underline"></div>
             </div>
             <div class="input-field">
-                <input type="checkbox">Flex
-                <input type="checkbox" >Gasolina
-                <input type="checkbox" >Etanol
-                <input type="checkbox" >Diesel
-                <input type="checkbox" >GNV
+                <p>Combustível:</p>
+                <input type="radio" name="combustivel"> Flex 
+                <input type="radio" name="combustivel"> Gasolina 
+                <input type="radio" name="combustivel"> Etanol 
+                <input type="radio" name="combustivel"> Diesel 
+                <input type="radio" name="combustivel"> GNV 
                 <div class="underline"></div>
             </div>
             <div class="input-field">
-                <textarea name="" id="" cols="30" rows="1" placeholder="Digite um resumo do veiculo"></textarea>
+                <textarea name="descricao" cols="30" rows="1" placeholder="Digite um resumo do veiculo"></textarea>
                 <div class="underline"></div>
             </div>
-        </form>
-
-        <form>
             <br><input type="submit" value="Anunciar">
         </form>
     </main>

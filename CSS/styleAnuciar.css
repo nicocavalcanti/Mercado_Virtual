@@ -110,4 +110,10 @@ form input[type="submit"]:hover {
 }
 textarea{
     outline: none;
+}.block{
+    display: block;
+}input[type="checkbox" i]{
+    margin-right: 10px;
+}p{
+    margin-bottom: 15px;
 }
