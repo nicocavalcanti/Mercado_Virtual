@@ -6,32 +6,40 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
-
-.menu ul{
-    margin: 0;
-   
-    background: linear-gradient(45deg, #2de278,  #008b56);
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.menu ul li{
-    display: inline;
-
-
-}
-.menu ul li a{
-    padding: 10px 10px;
-    display: inline-block;
-    color: white;
+.topnav {
+    background-color: linear-gradient(45deg, #2de278,  #008b56);
+    overflow: hidden;
+  }
+  
+  
+  .topnav a {
+    float: left;
+    display: block;
+    background-color: linear-gradient(45deg, #cfdad3,  #aebbb6);
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-}
-.menu ul li   :hover{
-    background: linear-gradient(to right, #56f2c3, #46ca8c);
+    font-size: 17px;
+  }
+  
+  
+  .topnav a:hover {
+    /*background: linear-gradient(45deg, #2de278,  #008b56);*/
+    color: black;
+  }
+  
+  
+  .topnav a.active {
+    background: linear-gradient(45deg, #2de278,  #008b56);
+    color: white;
+  }
+  
+  
+  .topnav .icon {
+    display: none;
 
-}
+
+  }
 
 .anuncio {
     width: 100vw;
@@ -40,4 +48,10 @@
     /*padding: 10px 10px;*/
     /*margin: 10px 10px;*/
    
+}
+.baixo{
+    background-color: black;
+    position: relative;
+    height: 25px;
+    clear: both;
 }

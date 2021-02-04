@@ -8,33 +8,27 @@
     <link rel="stylesheet" href="CSS/stylePrincipal.css">
 </head>
 <body>
-    <div class="menu">
+    <div class="topnav" >
+        <a href="#" class="active">Inicio</a>
+        <a href="anunciar">Anunciar</a>
+        <a href="#">Contato</a>
+        <a href="#">Sobre</a>
+	    <a href="login">Entrar</a>
+          
+   
+
        
-        <ul> 
-            
-            <li><a href="#">Inicio</a></li>
-            <li><a href="anunciar">Anunciar</a></li>
-            <li><a href="#">Chat</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li class="entrar"><a href="login">Entrar</a></li>
-            
-         
-            <input type="search" placeholder="Pesquise...">
-            <input type="submit" value="Pesquisar">
-           
-           
-            
-        </ul>
-        
-    </div>
+    </div>  
    
     <div class="anuncio">
-        <div class="anuncio">a</div>
-        <div class="anuncio">a</div>
-        <div class="anuncio">a</div>
-        <div class="anuncio">a</div>
-           
+        
+         aaaa  
 
+
+    </div>
+    <div class="baixo">
+	
+	    Powerd PotiCars Desenvolve
 
     </div>
     
