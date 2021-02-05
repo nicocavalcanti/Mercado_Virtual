@@ -17,7 +17,7 @@ Primary Key (apelido_usuario)
 -- select * from usuarios;
 -- insert into usuarios values("Romarinho","1234", "Agnaldo Romario de Souza", "Natal", "romaroA@gmail.com","xxxxxxxxxxxxxx");
 create table carros(
- chassi char(17) NOT NULL,
+ id_carro char(6) not null,
  marca varchar (40) not null,
  modelo varchar(40) not null,
  ano smallint not null,
@@ -31,7 +31,7 @@ create table carros(
  travas char(3),
  cor varchar(40),
  combustivel varchar(40),
- primary key (chassi)
+ primary key (id_carro)
  );
 -- insert into carros values ("12345678901234574", "Chevrolet", "Camaro","2021",1000,"vidro, direção, alarme, travas, ar, sensor, som","Azul", "GNV" );
  -- select * from carros;
@@ -40,13 +40,13 @@ create table carros(
  create table anuncio(
  id_anuncio int auto_increment,
  apelido_usuario varchar(17) not null,
- chassi char(17)  not null,
+ id_carro char(6) not null,
  data datetime not null,
  localização varchar(25),
  descrição varchar(160),
  preco_pedido float,
  foreign key (apelido_usuario) references usuarios(apelido_usuario),
- foreign key (chassi) references carros(chassi),
+ foreign key (id_carro) references carros(id_carro),
  primary key(id_anuncio)
  );
  
