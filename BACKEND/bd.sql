@@ -10,7 +10,7 @@ nome varchar(55) not null,
 cidade varchar(40) not null,
 email varchar(50)not null unique,
 numero_celular char(14),
-Primary Key (login)
+Primary Key (apelido_usuario)
 );
 
 -- drop table usuarios;
