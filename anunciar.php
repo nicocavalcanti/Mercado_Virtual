@@ -110,7 +110,7 @@
                 <div class="underline"></div>
             </div>
             <div class="input-field">
-                Ano: <input type="text" placeholder="00/00/0000" maxlength="10">
+                Ano: <input type="text" placeholder="2000" maxlength="10">
                 <div class="underline"></div>
             </div>
             <div class="input-field">
