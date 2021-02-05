@@ -4,7 +4,6 @@ create database bd;
 use bd;
 
 Create table usuarios (
-login varchar(20) not null unique,
 apelido_usuario varchar(17) not null,
 senha Varchar(40) not null,
 nome varchar(55) not null,
@@ -21,7 +20,7 @@ create table carros(
  chassi char(17) NOT NULL,
  marca varchar (40) not null,
  modelo varchar(40) not null,
- ano char(4) not null,
+ ano smallint not null,
  quilometragem float,
  ar_condicionado char(3),
  vidro char(3),
@@ -46,7 +45,7 @@ create table carros(
  localização varchar(25),
  descrição varchar(160),
  preco_pedido float,
- foreign key (apelido_usuario) references usuarios(login),
+ foreign key (apelido_usuario) references usuarios(apelido_usuario),
  foreign key (chassi) references carros(chassi),
  primary key(id_anuncio)
  );
@@ -58,11 +57,11 @@ create table carros(
  id_pesquisa int not null auto_increment,
  apelido_usuario varchar(17),
  modelo_filtrado varchar(20),
- date_inicial datetime,
- date_final datetime,
+ date_inicial smallint,
+ date_final smallint,
  preco_inicial float,
  preco_final float,
- foreign key(apelido_usuario) references usuarios(login),
+ foreign key(apelido_usuario) references usuarios(apelido_usuario),
  primary key(id_pesquisa)
  
  );
