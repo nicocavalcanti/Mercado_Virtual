@@ -40,9 +40,12 @@ body{
 }.meio{
     position: relative;
     height: 100vh;
+    word-wrap: break-word;
 }
 .rodape{
 	position: relative;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
 	
 }
 
