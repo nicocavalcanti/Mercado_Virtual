@@ -10,14 +10,14 @@
 <body>
     <div class="tudo">
      <nav class="menu">
-           <ul>
-             <li class="home"><a href="#">Home</a></li>
-             <li><a href="#">Anunciar</a></li>
-             <li><a href="#">Pesquisar</a></li>
-             <li><a href="#">Contato</a></li>
-             <li><a href="#">Sobre</a></li>
-	     <li class=""><a href="login.php">Entrar</a></li>
-          </ul>
+        <ul>
+            <li class="home"><a href="#">Home</a></li>
+            <li><a href="anunciar">Anunciar</a></li>
+            <li><a href="#">Pesquisar</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="login.php">Entrar</a></li>
+        </ul>
      </nav>
     
 	<div class="meio"><p>AAAAAAAAAAAAAAAA</p> </div>
