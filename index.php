@@ -8,30 +8,26 @@
     <link rel="stylesheet" href="CSS/stylePrincipal.css">
 </head>
 <body>
-    <div class="topnav" >
-        <a href="#" class="active">Inicio</a>
-        <a href="#">Anunciar</a>
-        <a href="#">Contato</a>
-        <a href="#">Sobre</a>
-	    <a href="login.php">Entrar</a>
-       
-        
-   
-
-       
-    </div>  
-   
-    <div class="anuncio">
-        
-         aaaa  
-
-
-    </div>
-    <div class="baixo">
-	
-	    Powerd PotiCars Desenvolve
-
-    </div>
+    <div class="tudo">
+     <nav class="menu">
+           <ul>
+             <li class="home"><a href="#">Home</a></li>
+             <li><a href="#">Anunciar</a></li>
+             <li><a href="#">Pesquisar</a></li>
+             <li><a href="#">Contato</a></li>
+             <li><a href="#">Sobre</a></li>
+	     <li class=""><a href="login.php">Entrar</a></li>
+          </ul>
+     </nav>
     
+	<div class="meio">AAAAAAAAAAAAAAAA</div>
+	<div class="rodape">
+    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+     Nao sei como ajeitar....
+    </div>
+
+   
+    
+    </div>
 </body>
 </html>
