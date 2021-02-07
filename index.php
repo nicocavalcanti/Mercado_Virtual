@@ -27,8 +27,8 @@
     
 	<div class="meio"><p>AAAAAAAAAAAAAAAA</p> </div>
 	<div class="rodape">
-    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-    Nao sei como ajeitar....
+        <p> Powerd PotiCars</p>
+   
     </div>
 
    
