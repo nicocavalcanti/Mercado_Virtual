@@ -88,7 +88,7 @@
                 <div class="underline"></div>
             </div>
             <div class="input-field">
-                Cor: <input type="Cor" placeholder="Ex.: Prata">
+                Cor: <input type="text" name="cor" placeholder="Ex.: Prata">
                 <div class="underline"></div>
             </div>
             <div class="input-field">                
@@ -110,7 +110,7 @@
                 <div class="underline"></div>
             </div>
             <div class="input-field">
-                Ano: <input type="text" placeholder="2000" maxlength="10">
+                Ano: <input type="text" placeholder="2000" maxlength="4">
                 <div class="underline"></div>
             </div>
             <div class="input-field">

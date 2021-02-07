@@ -1,3 +1,8 @@
+<?php
+    error_reporting(0);
+    include_once("BACKEND/connection.php");
+    include("BACKEND/verificar/verific.php");
+?>
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
@@ -16,14 +21,14 @@
             <li><a href="#">Pesquisar</a></li>
             <li><a href="#">Contato</a></li>
             <li><a href="#">Sobre</a></li>
-            <li><a href="login.php">Entrar</a></li>
+            <li><a href="login">Entrar</a></li>
         </ul>
      </nav>
     
 	<div class="meio"><p>AAAAAAAAAAAAAAAA</p> </div>
 	<div class="rodape">
     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-     Nao sei como ajeitar....
+    Nao sei como ajeitar....
     </div>
 
    
