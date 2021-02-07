@@ -1,3 +1,8 @@
+<?php
+   error_reporting(0);
+   session_start();
+   
+?>
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
@@ -11,9 +16,10 @@
 </head>
 <body>
    <main class="container">  
-      <a href="login"><img src="https://image.flaticon.com/icons/png/512/36/36976.png" alt="" width=25></a>
+      <a href="login"><img src="IMG/36976.png" alt="" width=25></a>
       <h2>Cadastramento</h2>
-      <form action="BACKEND/REGISTER/registerLogin" method="post">
+      <form action="BACKEND/registrar/registerLogin" method="post">
+
          <div class="input-field">
             <input type="text" name="completName" placeholder="Nome completo">
             <div class="underline"></div>
@@ -32,10 +38,6 @@
          </div>
          <div class="input-field">
             <input type="text" name="email" placeholder="E-mail">
-            <div class="underline"></div>
-         </div>
-         <div class="input-field">
-            <input type="text" name="username" placeholder="Login">
             <div class="underline"></div>
          </div>
          <div class="input-field">

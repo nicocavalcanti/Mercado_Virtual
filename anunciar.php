@@ -114,15 +114,11 @@
                 <div class="underline"></div>
             </div>
             <div class="input-field">
-<<<<<<< HEAD:anunciar.php
-                KM rodados: <input type="text" name="KMrodado" placeholder="Ex.: 200.000Km">
-=======
-                <input type="Cor" placeholder="Ex.: Prata">
+                Cor: <input type="text" name="cor" placeholder="Ex.: Prata">
                 <div class="underline"></div>
             </div>
-            <div class="input-field">
-                <input type="text" placeholder="Ex.: 200.000Km">
->>>>>>> 16abab45825b1026848c1e7bc59284af430cfb58:anunciar.html
+            <div class="input-field">                
+                KM rodados: <input type="text" name="KMrodado" placeholder="Ex.: 200.000Km">
                 <div class="underline"></div>
             </div>
             <div class="input-field">
@@ -140,7 +136,7 @@
                 <div class="underline"></div>
             </div>
             <div class="input-field">
-                Ano: <input type="text" placeholder="00/00/0000" maxlength="10">
+                Ano: <input type="text" placeholder="2000" maxlength="4">
                 <div class="underline"></div>
             </div>
             <div class="input-field">

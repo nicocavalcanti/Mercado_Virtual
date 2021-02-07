@@ -1,12 +1,8 @@
 <?php
-error_reporting(0);
-session_start();
-unset($_SESSION["user"]);
-if($_SESSION["user"]){
-    //header("location: main");
-    exit();
-}
-include_once("BACKEND/connection.php");
+    error_reporting(0);
+    include_once("BACKEND/connection.php");
+    session_start();
+    include("BACKEND/verificar/verific.php");
 ?>
 <!DOCTYPE html>
     <html lang="PT-BR">
@@ -21,7 +17,7 @@ include_once("BACKEND/connection.php");
     <body>        
         <main class="container">  
             <h2>Login PotiCars</h2>
-            <form action="BACKEND/REGISTER/verifyLogin" method="post"> <!--post não mostra, o get mostra  -->
+            <form action="BACKEND/verificar/verifyLogin" method="post"> <!--post não mostra, o get mostra  -->
                 <div class="input-field">
                     <input type="text" name="username" id="username" placeholder="Usuário">
                     <div class="underline"></div>
