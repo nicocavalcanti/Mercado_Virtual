@@ -42,25 +42,25 @@
                 <select name="select-simples-grande" class="">
                     <!--Utilizar IF:  se modelo for igual a Fiat apresentar modelos Fiat-->
                     <option value="Grand Siena">Grand Siena</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="">Model</option>
-                    <option value="Nissan">Nissan</option>
+                    <option value="">Palio</option>
+                    <option value="">Siena</option>
+                    <option value="">Punto</option>
+                    <option value="">Idea</option>
+                    <option value="">Toro</option>
+                    <option value="">Mobi</option>
+                    <option value="">Uno</option>
+                    <option value="">Bravo</option>
+                    <option value="">Doblo</option>
+                    <option value="">Fiorino</option>
+                    <option value="">Linea</option>
+                    <option value="">Premio</option>
+                    <option value="">Stilo</option>
+                    <option value="">Strada</option>
+                    <option value="">Argo</option>
+                    <option value="">Cronos</option>
+                    <option value="">147</option>
+                    <option value="">Marea</option>
+                    <option value="">Ducato</option>
 
                 </select>
                 <div class="underline"></div>
@@ -72,9 +72,14 @@
                     <option value="">RN - Rio Grande do Norte</option>
                 </select>
                 <select name="cidade" class="">
+                    <option value="">Arez</option>
                     <option value="">Acari</option>
                     <option value="">Afonso Bezerra</option>
                     <option value="">Alexandria</option>
+                    <option value="">Apodi</option>
+                    <option value="">Conguaretama</option>
+                    <option value="">Ceara Mirim</option>
+                    <option value="">Baia Formoza</option>
                     <option value="">Serrinha</option>
                     <option value="">Santo Antônio</option>
                     <option value="">Nova Cruz</option>
@@ -83,7 +88,28 @@
                     <option value="">Tibal do Sul</option>
                     <option value="">Parnamirim</option>
                     <option value="">Goinaninha</option>
-                    <option value="">Brejinho</option>
+                    <option value="">Tibal</option>
+                    <option value="">Mossoro</option>
+                    <option value="">Varzea</option>
+                    <option value="">Espirito Santo</option>
+                    <option value="">Montanhas</option>
+                    <option value="">Pedro Velho</option>
+                    <option value="">São Jose do Campestre</option>
+                    <option value="">São Jose de Mipibu</option>
+                    <option value="">Monte Alegre</option>
+                    <option value="">Vera Cruz</option>
+                    <option value="">Macaiba</option>
+                    <option value="">São Gonçalo do Amarante</option>
+                    <option value="">Lajes</option>
+                    <option value="">Guamare</option>
+                    <option value="">Passa e Fica</option>
+                    <option value="">Santa Cruz</option>
+                    <option value="">Currais Novos</option>
+                    <option value="">Japi</option>
+                    <option value="">Tangara</option>
+                    <option value="">Serra Caiada</option>
+                    <option value="">Eloi de Souza</option>
+                    <option value="">Bom Jesus</option>
                 </select>
                 <div class="underline"></div>
             </div>
