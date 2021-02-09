@@ -41,7 +41,7 @@ create table carros(
  id_anuncio int auto_increment,
  apelido_usuario varchar(17) not null,
  id_carro char(6) not null,
- data datetime not null,
+ data date not null,
  estado varchar(16),
  cidade varchar(25),
  descrição varchar(160),
