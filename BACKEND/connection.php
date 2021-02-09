@@ -1,5 +1,6 @@
 <?php
 	//paramentros da conexão
+    //esses parametro só funciona para o pc de paulo
     define("HOST","127.0.0.1");
     define("USER","root");
     define("SENHA", "senha");

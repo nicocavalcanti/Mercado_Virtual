@@ -13,11 +13,11 @@
         <h2>Anunciando...</h2>
         
 
-        <form>
+        <form action="BACKEND/register/registerAnuncio" method="post">
 
             <div class="input-field">
                 <input type="file" name="arquivo" Value="insira imagens" accept="image/*" multiple="multiple">
-                <select name="modelo" class="">
+                <select name="marca">
                     <option value="Fiat">Fiat</option>
                     <option value="Volkswagem">VW - Volkswagem</option>
                     <option value="Ford">Ford</option>
@@ -39,7 +39,7 @@
                     <option value="Renault">Renault</option>
                     <option value="Nissan">Nissan</option>
                 </select>
-                <select name="select-simples-grande" class="">
+                <select name="modelo">
                     <!--Utilizar IF:  se modelo for igual a Fiat apresentar modelos Fiat-->
                     <option value="Grand Siena">Grand Siena</option>
                     <option value="">Model</option>
@@ -68,22 +68,22 @@
 
             <div class="input-field">
 
-                <select name="estado" id="">
+                <select name="estado">
                     <option value="">RN - Rio Grande do Norte</option>
                 </select>
-                <select name="cidade" class="">
-                    <option value="">Acari</option>
-                    <option value="">Afonso Bezerra</option>
-                    <option value="">Alexandria</option>
-                    <option value="">Serrinha</option>
-                    <option value="">Santo Antônio</option>
-                    <option value="">Nova Cruz</option>
-                    <option value="">Natal</option>
-                    <option value="">Boa Saúde</option>
-                    <option value="">Tibal do Sul</option>
-                    <option value="">Parnamirim</option>
-                    <option value="">Goinaninha</option>
-                    <option value="">Brejinho</option>
+                <select name="cidade">
+                    <option value="Acari">Acari</option>
+                    <option value="Afonso Bezerra">Afonso Bezerra</option>
+                    <option value="Alexandria">Alexandria</option>
+                    <option value="Serrinha">Serrinha</option>
+                    <option value="Santo Antônio">Santo Antônio</option>
+                    <option value="Nova Cruz">Nova Cruz</option>
+                    <option value="Natal">Natal</option>
+                    <option value="Boa Saúde">Boa Saúde</option>
+                    <option value="Tibal do Sul">Tibal do Sul</option>
+                    <option value="Parnamirim">Parnamirim</option>
+                    <option value="Goinaninha">Goinaninha</option>
+                    <option value="Brejinho">Brejinho</option>
                 </select>
                 <div class="underline"></div>
             </div>
@@ -100,26 +100,26 @@
                 <div class="underline"></div>
             </div>
             <div class="input-field">
-                <label><input type="checkbox" >Ar Condicionado</label><br>
-                <label><input type="checkbox" >Vidro Elétrico</label><br>
-                <label><input type="checkbox" >Sensor</label><br>
-                <label><input type="checkbox" >Direção</label><br>
-                <label><input type="checkbox" >Som</label><br>
-                <label><input type="checkbox" >Alarme</label><br>
-                <label><input type="checkbox" >Travas</label><br>
+                <label><input type="checkbox" name="ar" value="sim">Ar Condicionado</label><br>
+                <label><input type="checkbox" name="Vidro" value="sim">Vidro Elétrico</label><br>
+                <label><input type="checkbox" name="Sensor" value="sim">Sensor</label><br>
+                <label><input type="checkbox" name="Direcao" value="sim">Direção</label><br>
+                <label><input type="checkbox" name="Som" value="sim">Som</label><br>
+                <label><input type="checkbox" name="Alarme" value="sim">Alarme</label><br>
+                <label><input type="checkbox" name="Trava" value="sim">Travas</label><br>
                 <div class="underline"></div>
             </div>
             <div class="input-field">
-                Ano: <input type="text" placeholder="2000" maxlength="4">
+                Ano: <input type="text" name="ano" placeholder="2000" maxlength="4">
                 <div class="underline"></div>
             </div>
             <div class="input-field">
                 <p>Combustível:</p>
-                <input type="radio" name="combustivel"> Flex 
-                <input type="radio" name="combustivel"> Gasolina 
-                <input type="radio" name="combustivel"> Etanol 
-                <input type="radio" name="combustivel"> Diesel 
-                <input type="radio" name="combustivel"> GNV 
+                <input type="radio" name="combustivel" value="Flex"> Flex 
+                <input type="radio" name="combustivel" value="Gasolina"> Gasolina 
+                <input type="radio" name="combustivel" value="Etanol"> Etanol 
+                <input type="radio" name="combustivel" value="Diesel"> Diesel 
+                <input type="radio" name="combustivel" value="GNV"> GNV 
                 <div class="underline"></div>
             </div>
             <div class="input-field">
