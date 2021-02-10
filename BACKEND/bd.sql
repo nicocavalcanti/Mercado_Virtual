@@ -1,4 +1,4 @@
-create database bd;
+dcreate database bd;
 -- drop database bd;
 
 use bd;
@@ -42,7 +42,8 @@ create table carros(
  apelido_usuario varchar(17) not null,
  id_carro char(6) not null,
  data datetime not null,
- localização varchar(25),
+ estado varchar(16),
+ cidade varchar(25),
  descrição varchar(160),
  preco_pedido float,
  foreign key (apelido_usuario) references usuarios(apelido_usuario),
