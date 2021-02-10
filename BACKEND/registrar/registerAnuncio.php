@@ -1,6 +1,7 @@
 <?php
-
-    //error_reporting(0);
+    session_start();
+    error_reporting(0);
+    include_once("../connection.php");
     $marca=$_POST["marca"];
     $modelo=$_POST["modelo"];
     $estado=$_POST["estado"];
@@ -61,36 +62,44 @@
         $query->execute();//execução 
         $result=$query;
         //verificar se tem id repetido
-        while($result.rowCount==1){//se tiver repetido vai repertir até não tiver não for mais repedido
+        while($result->rowCount()>=1){//se tiver repetido vai repertir até não tiver não for mais repedido
             $num=rand(100000,999999);
             $query=$pdo->prepare("SELECT * FROM carros WHERE id_carro='{$num}'");//stamente do pdo
             $query->execute();//execução 
             $result=$query;
         }
-
-        $stmt = $pdo->prepare("INSERT INTO carros 
-                (id_carro ,marca, modelo, ano, quilometragem, 
-                ar_condicionado, vidro, sensor, direcao, som,
-                 alarme, travas, cor, combustivel) VALUES 
-                ('{$num}', '{$marca}', '{$modelo}', '{$ano}',
-                 '{$rodado}', '{$ar}', '{$vidro}','{$sensor}',
-                 '{$direcao}','{$som}','{$alarme}','{$trava}',
-                 '{$cor}','{$combustivel}')");
-        $stmt->execute();
+        $data=date('Y-m-d H:i:s');
+        $apel=$_COOKIE['login'];
         
-        $stmt1 = $pdo->prepare("INSERT INTO anuncio 
-                (apelido_usuario, id_carro, data, 
-                localização, descrição, preco_pedido) VALUES 
-                ('{$_COOKIE['user']}', '{$num}', 
-                '{$date("Y/m/d")}', '{$estado}',
-                 '{$cidade}', '{$descricao}', '{$preco}'");
-        $stmt1->execute();
-
-        echo $marca.", ".$modelo.", ".$estado.", ".$cidade.", ".$cor.", ".$rodado.", ".$ano.", ".$combustivel.", ".$descricao.", ".$preco.", ".$ar.", ".$vidro.", ".$sensor.", ".$direcao
-        .", ".$som.", ".$alarme.", ".$trava;
-        $_SESSION['cadastrado']=true;
-        header("location: ../../anunciar");
-        exit();
+        try{
+            
+            $stmt = $pdo->prepare("INSERT INTO carros 
+                    (id_carro ,marca, modelo, ano, quilometragem, 
+                    ar_condicionado, vidro, sensor, direcao, som,
+                    alarme, travas, cor, combustivel) VALUES 
+                    ('{$num}', '{$marca}', '{$modelo}', '{$ano}',
+                    '{$rodado}', '{$ar}', '{$vidro}','{$sensor}',
+                    '{$direcao}','{$som}','{$alarme}','{$trava}',
+                    '{$cor}','{$combustivel}')");
+            $stmt->execute();
+           
+            $stmt = $pdo->prepare("INSERT INTO anuncio 
+                    (apelido_usuario, id_carro, data, 
+                    estado, cidade, descricao, preco_pedido) VALUES 
+                    ('{$apel}', '603195', 
+                    '{$data}', '{$estado}',
+                    '{$cidade}', '{$descricao}', '{$preco}')");
+            $stmt->execute();
+            $_SESSION['cadastrado']=true;
+            header("location: ../../anunciar");
+            exit();
+        }
+        catch(Exception $e){
+            print_r($e);
+        }
+        /*echo $marca.", ".$modelo.", ".$estado.", ".$cidade.", ".$cor.", ".$rodado.", ".$ano.", ".$combustivel.", ".$descricao.", ".$preco.", ".$ar.", ".$vidro.", ".$sensor.", ".$direcao
+        .", ".$som.", ".$alarme.", ".$trava;*/
+       
     }
 
 ?>

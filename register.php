@@ -1,6 +1,10 @@
 <?php
+   
    error_reporting(0);
    session_start();
+   include_once("BACKEND/connection.php");
+   $_SESSION["pagina"]="register";
+   include("BACKEND/verificar/verific.php");
    
 ?>
 <!DOCTYPE html>

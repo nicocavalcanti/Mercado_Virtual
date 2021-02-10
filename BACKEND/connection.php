@@ -1,4 +1,5 @@
 <?php
+    //date_default_timezone_set('America/Sao_Paulo');
 	//paramentros da conexão
     //esses parametro só funciona para o pc de paulo
     define("HOST","127.0.0.1");
@@ -8,9 +9,10 @@
     //criar conexão
     try {
     	$pdo=new PDO("mysql:host=".HOST.";dbname=".BD,USER,SENHA);
+        
     }catch (Exception $e) {
     	echo 'Não foi possivel conectar';
-    	$pdo->rollBack();
+    	//$pdo->rollBack();
     }
     
 ?>

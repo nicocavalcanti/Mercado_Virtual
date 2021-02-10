@@ -1,4 +1,4 @@
-dcreate database bd;
+create database bd;
 -- drop database bd;
 
 use bd;
@@ -38,13 +38,13 @@ create table carros(
 -- drop table carros;
 
  create table anuncio(
- id_anuncio int auto_increment,
+ id_anuncio int not null auto_increment,
  apelido_usuario varchar(17) not null,
  id_carro char(6) not null,
  data datetime not null,
- estado varchar(16),
+ estado varchar(30),
  cidade varchar(25),
- descrição varchar(160),
+ descricao varchar(160),
  preco_pedido float,
  foreign key (apelido_usuario) references usuarios(apelido_usuario),
  foreign key (id_carro) references carros(id_carro),

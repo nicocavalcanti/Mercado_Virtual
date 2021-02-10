@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+<?php 
+session_start();
+?>
 <html lang="PT-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -166,7 +168,9 @@
       esse trecho de php serve para aparecer a messagem de erro ou de cadastro
       */
          //$_SESSION['vaziu']=true;
-         //echo rand(100000,999999);
+         
+         /*echo date("e");
+         echo date("Y-m-d H:i:s");*/
          //$_SESSION['cadastrado']=true;
          if (isset($_SESSION["vaziu"])) {
             echo " <div class='erro' id='erro'>

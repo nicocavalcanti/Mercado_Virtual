@@ -24,15 +24,15 @@
 	//verificar a quantidades de valores vai voltar do banco de dados
 	if($result->rowCount() == 1){
 		//retornar valor do banco de dados
-		$nome=$pdo->query("SELECT ID,nome from usuarios WHERE 
+		$nome=$pdo->query("SELECT nome from usuarios WHERE 
 		apelido_usuario='{$login}' OR email='{$login}' AND senha='{$senha}'")->fetch(PDO::FETCH_OBJ);
 
-		setcookie("user",$nome->nome,time()+(60*60*24*7),"/");//adicionar valor ao cookie
-		setcookie("login",$login,time()+(60*60*24*7),"/");
-		setcookie("senha",$senha,time()+(60*60*24*7),"/");
+		setcookie("user",$nome->nome,time()+604800,"/");//adicionar valor ao cookie
+		setcookie("login",$login,time()+604800,"/");
+		setcookie("senha",$senha,time()+604800,"/");
 		unset($_SESSION["não_autenticado"]);//destruir a seção não_autenticado || usado para mensagem de erro
 		unset($_SESSION["vaziu"]);// destruir a seção vaziu || usado para mensagem de erro
-		header("location: ../../index");//ir para outra pagina
+		header("location: ../../");//ir para outra pagina
 		exit();
 	}
 	// se não existir voltarar para a pagina para efetuar login

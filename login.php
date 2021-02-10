@@ -2,6 +2,7 @@
     error_reporting(0);
     include_once("BACKEND/connection.php");
     session_start();
+    $_SESSION["pagina"]="login";
     include("BACKEND/verificar/verific.php");
 ?>
 <!DOCTYPE html>
