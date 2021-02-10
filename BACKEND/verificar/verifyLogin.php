@@ -27,9 +27,9 @@
 		$nome=$pdo->query("SELECT ID,nome from usuarios WHERE 
 		apelido_usuario='{$login}' OR email='{$login}' AND senha='{$senha}'")->fetch(PDO::FETCH_OBJ);
 
-		setcookie("user",$nome->nome,time()+(60*60*24),"/");//adicionar valor ao cookie
-		setcookie("login",$login,time()+(86400*3),"/");
-		setcookie("senha",$senha,time()+(86400*3),"/");
+		setcookie("user",$nome->nome,time()+(60*60*24*7),"/");//adicionar valor ao cookie
+		setcookie("login",$login,time()+(60*60*24*7),"/");
+		setcookie("senha",$senha,time()+(60*60*24*7),"/");
 		unset($_SESSION["não_autenticado"]);//destruir a seção não_autenticado || usado para mensagem de erro
 		unset($_SESSION["vaziu"]);// destruir a seção vaziu || usado para mensagem de erro
 		header("location: ../../index");//ir para outra pagina

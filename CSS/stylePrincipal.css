@@ -43,11 +43,9 @@ body{
     height: 100vh;
     
 }
-/*.rodape{
-	position: relative;
-	
-}*/
-
+p{
+    align-items: center;
+}
 
 
 
