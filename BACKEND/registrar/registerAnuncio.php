@@ -1,6 +1,6 @@
 <?php
     session_start();
-    error_reporting(0);
+    //error_reporting(0);
     include_once("../connection.php");
     $marca=$_POST["marca"];
     $modelo=$_POST["modelo"];
@@ -21,7 +21,11 @@
     $alarme=$_POST["alarme"];
     $trava=$_POST["trava"];
     //-------------------//
+    $num=rand(100000,999999);
+    $data=date('Y-m-d H:i:s');
+    $apel=$_SESSION['login'];
 //verificar se algum campo está vaziu
+    
     if (empty($marca) || empty($modelo)) {
         # code...
         $_SESSION['vaziu']=true;
@@ -42,7 +46,7 @@
         $_SESSION['vaziu']=true;
         header("location: ../../anunciar");
         exit();
-    }elseif (empty($descricao)) {
+    }elseif (empty($descricao) ) {
         # code...
         $_SESSION['vaziu']=true;
         header("location: ../../anunciar");
@@ -55,10 +59,7 @@
         if(empty($som)){$som="não";}
         if(empty($alarme)){$alarme="não";}
         if(empty($trava)){$trava="não";}
-
-        $num=rand(100000,999999);
-        $query=$pdo->prepare("SELECT * FROM carros WHERE 
-        id_carro='{$num}'");//stamente do pdo
+        $query=$pdo->prepare("SELECT * FROM carros WHERE id_carro='{$num}'");//stamente do pdo
         $query->execute();//execução 
         $result=$query;
         //verificar se tem id repetido
@@ -68,9 +69,6 @@
             $query->execute();//execução 
             $result=$query;
         }
-        $data=date('Y-m-d H:i:s');
-        $apel=$_COOKIE['login'];
-        
         try{
             
             $stmt = $pdo->prepare("INSERT INTO carros 
@@ -86,10 +84,30 @@
             $stmt = $pdo->prepare("INSERT INTO anuncio 
                     (apelido_usuario, id_carro, data, 
                     estado, cidade, descricao, preco_pedido) VALUES 
-                    ('{$apel}', '603195', 
+                    ('{$apel}', '{$num}', 
                     '{$data}', '{$estado}',
                     '{$cidade}', '{$descricao}', '{$preco}')");
             $stmt->execute();
+           
+            
+            if(isset($_FILES["arquivo"])){
+                mkdir("../../paginas/{$num}/img",0777,TRUE);
+                $cd="../../paginas/{$num}/img/";
+                $img=count($_FILES['arquivo']['name']);
+                $n=0;
+                while($n<$img){
+                    if($n==0){
+                        $novoNome="{$num}.jpg";
+                        move_uploaded_file($_FILES['arquivo']["tmp_name"][$n],$cd.$novoNome);
+                    }else{
+                        $novoNome="{$num}({$n}).jpg";
+                        move_uploaded_file($_FILES['arquivo']["tmp_name"][$n],$cd.$novoNome);
+                    }
+                    $n++;
+                    //echo $novoNome;
+                }
+            }         
+            
             $_SESSION['cadastrado']=true;
             header("location: ../../anunciar");
             exit();

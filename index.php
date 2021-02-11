@@ -1,7 +1,7 @@
 <?php
     
     error_reporting(0);
-    
+    session_start();
     include_once("BACKEND/connection.php");
     include("BACKEND/verificar/verific.php");
 ?>
