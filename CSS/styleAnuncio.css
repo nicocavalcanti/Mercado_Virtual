@@ -22,7 +22,7 @@ main.container {
     margin-top: 8vh;
     margin-bottom: 8vh;
     background: white;
-    max-width: 80vw;
+    width: 40vw;
     /*min-height: 40vh;*/
     padding: 2rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
