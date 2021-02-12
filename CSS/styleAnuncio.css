@@ -80,18 +80,18 @@ form .input-field {
     transform-origin: left;
 }
 
-.input-field input:focus ~ .underline::after {
+.input-field p:focus ~ .underline::after {
     transform: scaleX(1);
 }
 
-.input-field input {
+.input-field p {
    
     outline: none;
     font-size: 0.8rem;
     color: rgba(0, 0, 0, 0.7);
 }
 
-.input-field input::placeholder {
+.input-field p::placeholder {
     color: rgba(0, 0, 0, 0.5);
 }
 form input[type="submit"] {
