@@ -13,6 +13,7 @@ session_start();
 
 <body>
     <main class="container">
+    <a href="index.php"><img src="IMG/36976.png" alt="" width=25></a>
         <h2>Anunciando...</h2>
         
 

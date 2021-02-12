@@ -20,7 +20,7 @@
 </head>
 <body>
    <main class="container">  
-      <a href="login"><img src="IMG/36976.png" alt="" width=25></a>
+      <a href="login.php"><img src="IMG/36976.png" alt="" width=25></a>
       <h2>Cadastramento</h2>
       <form action="BACKEND/registrar/registerLogin" method="post">
 

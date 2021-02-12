@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anúncio</title>
+    <link rel="stylesheet" href="CSS/styleAnuncio.css">
+</head>
+
+<body>
+    <main class="container"> 
+        <a href="index.php"><img src="IMG/36976.png" alt="" width=25></a>
+        <h2>Anúncio</h2>
+       
+
+        <form  enctype="" action="" method="post">
+            <div class="input-field"><!--Colocar pra mostrar todas as imagens cadastradas para o anúncio-->
+                <img src="https://s3-sa-east-1.amazonaws.com/carroaluguel-website/images/carros/doblo.png" alt="">
+            </div>
+            <div class="underline"></div>
+            <div class="input-field">
+                Marca: <input type="text " value="*FIAT*"> 
+                Modelo: <input type="text" value="*Doblo*">
+                <div class="underline"></div>
+            </div>
+
+            <div class="input-field">
+
+                <select name="estado">
+                    <option selected value="RN - Rio Grande do Norte" hidden >RN - Rio Grande do Norte</option>
+                </select>
+                Cidade: <input type="text "value="*Serrinha*">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+            Cor: <input type="text" name="cor" placeholder="Ex.: Prata" value = "*Prata* " required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">                
+                KM rodados: <input type="text" name="KMrodado" placeholder="Ex.: 200.000Km" value ="*1.000.000*"required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                Preço: <input type="Valor" name="preco" placeholder="Ex.: 20.000" value= "*R$ 21.000*"required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="text" value="*Ar Condicionado:  mostrar os checkboxs que o usuario marcou* " >
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                Ano: <input type="text" name="ano" placeholder="2000" maxlength="4" value="*2010*" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <p class="combustivel">Combustível:<input type="text" value="*Flex*" ></p> 
+               
+                <div class="underline"></div>
+            </div>
+            <div class="input-field"><!--Olha o size colocar de acordo com o tamanho texto -->
+              <input type="text" size="80" value="Carro muito conservado e novo, para mais informações mande um chat ou um zap para 84 900000000">
+                <div class="underline"></div>
+            </div>
+            <br><input type="submit" value="Chat"> 
+        </form>
+    </main>
+    
+</body>
+</html>
