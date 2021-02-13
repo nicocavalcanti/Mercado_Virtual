@@ -1,54 +1,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 *{
-    margin: 0;
-    border: 0;
     padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+
+
 }
 body{
-    display: flex;
+    font-family: "Poppins", sans-serif;
 }
+nav{
+    background:#008b56;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 20px; 
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
 
-.menu ul {
-    display: flex;
-    padding:20px;
-    margin:0px;
-    background-color:#EDEDED;
-    list-style:none;
 }
-/*.menu ul li { 
+nav ul li{
     display: inline;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+a.active,a:hover{
+    background: #2de278;
+    transition: .5s;
+
+}
+.checkbnt{
+   font-size: 30px;
+   color: white;
+   float: right;
+   line-height: 80px;
+   margin-right: 40px;
+   cursor: pointer; 
+   display: none; 
+}
+#check{
+    display: none;
+
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}
+@media (max-width: 858px){
+    .checkbnt{
+        display: block;
+
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#2de278;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    a:hover,a.active{
+        background: none;
+        color: black;
+    }
+    #check:checked ~ ul{
+        left: 0;
+
+    }
+}
+.anunciototal{
+    
+    padding: 5px;
+    margin: 5px;
+    background: black;
+    height:240px;
+    width:100%;
+
+}
+.meio{
+	width: 100%;
+	height: 40vh;
+	display: flex;
+}
+.anuncio{
+    background: blue;
+    height: 180px;
    
-}*/
-.menu ul li a {
-    padding: 10px 15px;
-    /*display: inline-block;*/
+    padding: 2px;
+    margin: 4px;
 
-    /* visual do link */
-    background-color:#EDEDED;
-    color: black;
-    text-decoration: none;
-    
+
 }
-.menu ul li a:hover {
-    background-color:#8cf7b8;
-    color: #6D6D6D;
-}   
-.tudo{
-    width: 100vw;
-	/*position: relative;*/
-}.meio{
-    /*position: relative;*/
-    height: 100vh;
-    
+.descricao{
+	background: white;
+	height: 20px;
+	padding: 2px;
+    	margin: 4px;
 }
-p{
-    align-items: center;
+img{
+	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    	width: 60%;   	
 }
-
-
-
 
 
 
