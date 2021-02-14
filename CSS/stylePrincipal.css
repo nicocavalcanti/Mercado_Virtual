@@ -123,6 +123,7 @@ a.active,a:hover{
     margin: auto;
 	width:77vw;
 	/*height: 40vh;*/
+
     overflow: hidden;
 }.ads{
     width: 100%;
@@ -161,8 +162,6 @@ img{
     float:left; 
     margin:2px; 
     box-shadow: 0 0 4px rgba(0,0,0,0.7); 
-    position: absolute;
-    
     top: 13.5vw;
     background: rgba(255,255,255,0.8);
     display: block;
@@ -179,8 +178,10 @@ img{
 }.voltar{
     left: 9.8vw;
     display: none;
+    transition: 2s right;
 }.passar{
     right: 9.8vw;
+    transition: 2s left;
 }
 
 
