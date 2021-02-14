@@ -105,21 +105,32 @@ a.active,a:hover{
         left: 0;
 
     }
+}.tudo{
+    width: 100%;
 }
 .anunciototal{
     padding: 5px;
-    margin: 5px;
+    margin: 0.3vw;
     background: black;
     height:240px;
-    width:30%;
+    width:25vw;
     min-width: 300px;
-
+    position: relative;
+    transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    left: 0%;
 }
 .meio{
-	width: 100vw;
+    margin: auto;
+	width:77vw;
 	/*height: 40vh;*/
-    display: flex;
-	/*justify-content: center;*/
+    overflow: hidden;
+}.ads{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    /*flex-wrap:wrap;*/
+    
 }
 .anuncio{
     background: blue;
@@ -132,7 +143,7 @@ a.active,a:hover{
 	background: white;
 	height: 20px;
 	padding: 2px;
-    	margin: 4px;
+    margin: 4px;
 }
 img{
 	display: block;
@@ -142,7 +153,34 @@ img{
 }
 .rodape{
     display: block;
-    width: 100vw;
+    /*width: 100vw;*/
+}.seta{ 
+    padding:6px 7px; 
+    border:4px solid rgb(124, 124, 124); 
+    border-radius:100%; 
+    float:left; 
+    margin:2px; 
+    box-shadow: 0 0 4px rgba(0,0,0,0.7); 
+    position: absolute;
+    
+    top: 13.5vw;
+    background: rgba(255,255,255,0.8);
+    display: block;
+}.passar i{ 
+    border-left: 20px solid rgb(124, 124, 124);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    float:left; 
+}.voltar i{
+    border-right: 20px solid rgb(124, 124, 124);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    float:left; 
+}.voltar{
+    left: 9.8vw;
+    display: none;
+}.passar{
+    right: 9.8vw;
 }
 
 
