@@ -10,6 +10,7 @@
 }
 body{
     font-family: "Poppins", sans-serif;
+    display: flexbox;
 }
 nav{
     background:#008b56;
@@ -106,27 +107,26 @@ a.active,a:hover{
     }
 }
 .anunciototal{
-    
     padding: 5px;
     margin: 5px;
     background: black;
     height:240px;
-    width:100%;
+    width:30%;
+    min-width: 300px;
 
 }
 .meio{
-	width: 100%;
-	height: 40vh;
-	display: flex;
+	width: 100vw;
+	/*height: 40vh;*/
+    display: flex;
+	/*justify-content: center;*/
 }
 .anuncio{
     background: blue;
     height: 180px;
-   
+    align-items: center;
     padding: 2px;
     margin: 4px;
-
-
 }
 .descricao{
 	background: white;
@@ -136,10 +136,13 @@ a.active,a:hover{
 }
 img{
 	display: block;
-    	margin-left: auto;
-    	margin-right: auto;
-    	width: 60%;   	
+    height: 100%;
+    width: 100%;
+    object-fit: cover;   	
 }
-
+.rodape{
+    display: block;
+    width: 100vw;
+}
 
 
