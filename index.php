@@ -28,27 +28,27 @@
         <div class="ads">
             <div class="anunciototal" id='n1'>
                 <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-            <div class="descricao">DESCRIÇÃO 1</div>
+            <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor</p></div>
             </div>
             <div class="anunciototal" id='n1'>
                 <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-            <div class="descricao">DESCRIÇÃO 2</div>
+            <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor</p></div>
             </div>
             <div class="anunciototal" id='n1'>
                 <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-            <div class="descricao">DESCRIÇÃO 3</div>
+            <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor</p></div>
             </div>
             <div class="anunciototal" id='n1'>
                 <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-            <div class="descricao">DESCRIÇÃO 4</div>
+            <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor</p></div>
             </div>
             <div class="anunciototal" id='n1'>
                 <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-            <div class="descricao">DESCRIÇÃO 5</div>
+            <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor</p></div>
             </div>
             <div class="anunciototal" id='n1'>
                 <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-            <div class="descricao">DESCRIÇÃO 6</div>
+            <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor</p></div>
             </div>
         </div>
         <div class='seta voltar' id="n1" ><i></i></div>
@@ -56,33 +56,33 @@
         <div class="ads">
             <div class="anunciototal" id='n2'>
                 <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-            <div class="descricao"><p>nomeCarro, valor, ano</p></div>
+            <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor</p></div>
             </div>
             <div class="anunciototal" id='n2'>
                 <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-            <div class="descricao">DESCRIÇÃO 2</div>
+            <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor</p></div>
             </div>
             <div class="anunciototal" id='n2'>
                 <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-            <div class="descricao">DESCRIÇÃO 3</div>
+            <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor</p></div>
             </div>
             <div class="anunciototal" id='n2'>
                 <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-            <div class="descricao">DESCRIÇÃO 4</div>
+            <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor</p></div>
             </div>
             <div class="anunciototal" id='n2'>
                 <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-            <div class="descricao">DESCRIÇÃO 5</div>
+            <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor</p></div>
             </div>
             <div class="anunciototal" id='n2'>
                 <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-            <div class="descricao">DESCRIÇÃO 6</div>
+            <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor</p></div>
             </div>
         </div>
         <div class='seta voltar' id="n2"><i></i></div>
         <div class='seta passar' id="n2"><i></i></div>
     </div>
-    <p style='text-align:center' >1,2,3,4,5...</p>
+    <p style='text-align:center' >nomeCarro, ano, valor</p>
 	<div class="rodape">
     <p style='text-align:center' >Copyright © 2021-2021 PotiCars.com.br LTDA.</p>
    
