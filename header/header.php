@@ -1,5 +1,5 @@
 <nav>
-      <input type="checkbox"id="check">
+      <input type="checkbox" id="check">
       <label for="check" class="checkbnt">
         <i class="fas fa-bars"></i>
         

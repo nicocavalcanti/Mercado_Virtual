@@ -16,6 +16,7 @@ nav{
     background:#008b56;
     height: 80px;
     width: 100%;
+    z-index: 10;
 }
 label.logo{
     color: white;
@@ -61,66 +62,24 @@ a.active,a:hover{
     display: none;
 
 }
-@media (max-width: 952px){
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-
-    }
-}
-@media (max-width: 858px){
-    .checkbnt{
-        display: block;
-
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background:#2de278;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-
-
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-
-    }
-    a:hover,a.active{
-        background: none;
-        color: #ebebe0e0;
-    }
-    #check:checked ~ ul{
-        left: 0;
-
-    }
-}.tudo{
+.tudo{
     width: 100%;
 }
 .anunciototal{
     padding: 5px;
     margin: 0.3vw;
     background: #ebebe0e0;
-    height:240px;
+    height:220px;
     width:25vw;
     min-width: 300px;
     position: relative;
-    transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    transition: all 0.5s /*cubic-bezier(0.680, -0.550, 0.265, 1.550)*/;
     left: 0%;
+    border-radius: 10px;
 }
 .meio{
     margin: auto;
+    margin-top: 2%;
 	width:77vw;
 	/*height: 40vh;*/
 
@@ -130,6 +89,7 @@ a.active,a:hover{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+    border: 2px solid #373838;
     /*flex-wrap:wrap;*/
     
 }
@@ -183,5 +143,53 @@ img{
     right: 9.8vw;
     transition: 2s left;
 }
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
 
+    }
+}
+@media (max-width: 858px){
+    .checkbnt{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#2de278;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.7s;
+        z-index: 10;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }nav{
+        top:0;
+        position: fixed;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #ebebe0e0;
+    }
+    #check:checked ~ ul{
+        left: 0;
+
+    }.meio{
+        display: block;
+        margin-top: 18vh;
+    }
+}
 

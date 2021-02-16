@@ -82,7 +82,7 @@
         <div class='seta voltar' id="n2"><i></i></div>
         <div class='seta passar' id="n2"><i></i></div>
     </div>
-    <p style='text-align:center' >nomeCarro, ano, valor</p>
+    <p style='text-align:center' >Feito por Luiz, Paulo e Reina</p>
 	<div class="rodape">
     <p style='text-align:center' >Copyright © 2021-2021 PotiCars.com.br LTDA.</p>
    
