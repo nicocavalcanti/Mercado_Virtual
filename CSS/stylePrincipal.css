@@ -99,7 +99,7 @@ a.active,a:hover{
     }
     a:hover,a.active{
         background: none;
-        color: black;
+        color: #ebebe0e0;
     }
     #check:checked ~ ul{
         left: 0;
@@ -111,7 +111,7 @@ a.active,a:hover{
 .anunciototal{
     padding: 5px;
     margin: 0.3vw;
-    background: black;
+    background: #ebebe0e0;
     height:240px;
     width:25vw;
     min-width: 300px;
@@ -134,14 +134,14 @@ a.active,a:hover{
     
 }
 .anuncio{
-    background: blue;
+    background: #ebebe0e0;
     height: 180px;
     align-items: center;
     padding: 2px;
     margin: 4px;
 }
 .descricao{
-	background: white;
+	background: #ebebe0e0;
 	height: 20px;
 	padding: 2px;
     margin: 4px;

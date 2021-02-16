@@ -56,7 +56,7 @@
         <div class="ads">
             <div class="anunciototal" id='n2'>
                 <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-            <div class="descricao">DESCRIÇÃO 1</div>
+            <div class="descricao"><p>nomeCarro, valor, ano</p></div>
             </div>
             <div class="anunciototal" id='n2'>
                 <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
@@ -84,7 +84,7 @@
     </div>
     <p style='text-align:center' >1,2,3,4,5...</p>
 	<div class="rodape">
-        <p> Powerd PotiCars</p>
+    <p style='text-align:center' >Copyright © 2021-2021 PotiCars.com.br LTDA.</p>
    
     </div>
 
