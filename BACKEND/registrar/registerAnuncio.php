@@ -25,7 +25,7 @@
     $data=date('Y-m-d H:i:s');
     $apel=$_SESSION['login'];
 //verificar se algum campo está vaziu
-    
+
     if (empty($marca) || empty($modelo)) {
         # code...
         $_SESSION['vaziu']=true;

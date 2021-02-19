@@ -8,10 +8,10 @@
       <ul>
         <li><a  href="#">Home</a></li>
         <li><a href="#">Pesquisar</a></li>
-        <?php if(!isset($_SESSION["login"])){?>
+        <?php if(isset($_SESSION["login"])){?>
         <li><a href="anunciar">Anunciar</a></li>
-        <li><a href="#">Contato</a></li>
         <?php } ?>
+        <li><a href="#">Contato</a></li>
         <li><a href="#">Sobre</a></li>
         <?php if(!isset($_SESSION["login"])){ ?>
         <li><a class="active"href="login">Entrar</a></li>

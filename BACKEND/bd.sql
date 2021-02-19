@@ -40,7 +40,7 @@ create table carros(
  create table anuncio(
  id_anuncio int not null auto_increment,
  apelido_usuario varchar(17) not null,
- id_carro char(6) not null,
+ id_carro char(6) not null unique,
  data datetime not null,
  estado varchar(30),
  cidade varchar(25),
@@ -52,7 +52,7 @@ create table carros(
  );
  
  -- select * from anuncio;
- -- drop table anuncio;
+-- drop table anuncio;
  
  create table pesquisa(
  id_pesquisa int not null auto_increment,

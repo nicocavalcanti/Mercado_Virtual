@@ -18,7 +18,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 main.container {
+    margin: auto;
     margin-top: 8vh;
     margin-bottom: 8vh;
     background: white;
@@ -54,6 +56,7 @@ form {
     position: relative;
     width: 100%;
     margin-bottom: 1rem;
+    object-fit: cover;
 }
 
 form .input-field {
@@ -124,11 +127,12 @@ form input[type="submit"]:hover {
     margin-right: 10px;
 }.chat{
     margin-top: 5%;
-    border: 1px solid;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     height: 180px;
     margin-bottom: 2%;
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) inset;
     padding: 15px;
+    border-radius: 5px;
     padding-top: 10px;
 }.caixa_chat{
     border: 1px solid;
@@ -137,6 +141,8 @@ form input[type="submit"]:hover {
     padding: 3px 8px 3px 8px ;
     margin-right:2%;
     font-size: 0.91rem;
+    border-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset;
 }.caixa_chat:focus{
     outline: none;
 }.btSub{

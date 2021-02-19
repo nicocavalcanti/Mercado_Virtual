@@ -10,11 +10,9 @@
 
 <body>
     <main class="container"> 
-        <a href="index.php"><img src="IMG/36976.png" alt="" width=25></a>
+        <a href="index"><img src="IMG/36976.png" alt="" width=25></a>
         <h2>Anúncio</h2>
-       
 
-        
             <div class="input-field"><!--Colocar pra mostrar todas as imagens cadastradas para o anúncio-->
                 <img src="https://s3-sa-east-1.amazonaws.com/carroaluguel-website/images/carros/doblo.png" alt="">
                 <div class="underline"></div>
