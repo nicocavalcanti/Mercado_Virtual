@@ -67,4 +67,12 @@ create table carros(
  
  );
  -- drop table pesquisa;
- 
+ create table chat (
+ id_chat int auto_increment,
+ id_emissor int,
+ id_anuncio int,
+ mensagem varchar(150),
+ datta datetime,
+ primary key(id_chat)
+
+);
