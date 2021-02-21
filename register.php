@@ -12,7 +12,7 @@
 <html lang="PT-BR">
 <head>
    <meta charset="UTF-8">
-   <link rel="icon" href="https://seeklogo.com/images/P/potiguar-logo-716EBD6442-seeklogo.com.png" type="image/png">
+   <link rel="icon" href="./IMG/logo.jpeg" type="image/jpeg">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="CSS/styleCadastro.css">
    <script src="JAVASCRIPT/interation.js"></script>

@@ -69,10 +69,13 @@ create table carros(
  -- drop table pesquisa;
  create table chat (
  id_chat int auto_increment,
- id_emissor int,
+ de_quem varchar(17) not null unique,
+ para_quem varchar(12),
  id_anuncio int,
- mensagem varchar(150),
- datta datetime,
- primary key(id_chat)
-
+ mensagem text(120),
+ primary key(id_chat),
+ foreign key(id_anuncio) references anuncio(id_anuncio),
+ foreign key(de_quem) references usuarios (apelido_usuario),
+ foreign key(para_quem) references usuarios (apelido_usuario)
 );
+drop table chat;

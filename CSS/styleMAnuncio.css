@@ -65,40 +65,14 @@ a.active,a:hover{
 .tudo{
     width: 100%;
 }
-.anunciototal{
-    padding: 5px;
-    margin: 0.3vw;
-    background: #ebebe0e0;
-    height:250px;
-    width:25vw;
-    min-width: 300px;
-    position: relative;
-    transition: all 0.5s /*cubic-bezier(0.680, -0.550, 0.265, 1.550)*/;
-    left: 0%;
-    border-radius: 10px;
-}
 .meio{
     margin: auto;
-    margin-top: 2%;
-	width:77vw;
-	/*height: 40vh;*/
+    margin-top: 100px;
+	width:80vw;
 
-    overflow: hidden;
-}.ads{
-    width: 100%;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    border: 2px solid #373838;
-    /*flex-wrap:wrap;*/
+	/*height: 40vh;*/
     
-}
-.anuncio{
-    background: #ebebe0e0;
-    height: 180px;
-    align-items: center;
-    padding: 2px;
-    margin: 4px;
+
 }
 .descricao{
 	background: #ebebe0e0;
@@ -113,37 +87,10 @@ img{
     object-fit: cover;   	
 }
 .rodape{
+    margin-top: 5%;
     display: block;
     /*width: 100vw;*/
-}.seta{ 
-    padding:6px 7px; 
-    border:4px solid rgb(124, 124, 124); 
-    border-radius:100%; 
-    float:left; 
-    margin:2px; 
-    box-shadow: 0 0 4px rgba(0,0,0,0.7); 
-    top: 13.5vw;
-    background: rgba(255,255,255,0.8);
-    display: block;
-}.passar i{ 
-    border-left: 20px solid rgb(124, 124, 124);
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    float:left; 
-}.voltar i{
-    border-right: 20px solid rgb(124, 124, 124);
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    float:left; 
-}.voltar{
-    left: 9.8vw;
-    display: none;
-    transition: 2s right;
-}.passar{
-    right: 9.8vw;
-    transition: 2s left;
-}
-@media (max-width: 952px){
+}@media (max-width: 952px){
     label.logo{
         font-size: 30px;
         padding-left: 50px;
@@ -187,9 +134,27 @@ img{
     #check:checked ~ ul{
         left: 0;
 
-    }.meio{
-        display: block;
-        margin-top: 18vh;
     }
+}.pessoa{
+    height: 15vw;
+    width: 15vw;
+    min-width: 150px;
+    min-height: 150px;
+    border: 1px solid;
+    margin: auto;
+    margin-bottom: 2%;
+    
+}nav{
+    top:0;
+    position: fixed;
+    transition: 1s;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+}.anuncio{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row; 
 }
 

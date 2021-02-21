@@ -1,30 +1,23 @@
-<?php
-session_start();
-include_once("../../BACKEND/connection.php");
-$img=basename(__DIR__);//volta o nome do arquivo
-
-$query=$pdo->query("SELECT * FROM anuncio WHERE id_carro='{$img}'")->fetch(PDO::FETCH_OBJ);
-$query1=$pdo->query("SELECT * FROM carros WHERE id_carro='{$img}'")->fetch(PDO::FETCH_OBJ);
-?>
-
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="https://seeklogo.com/images/P/potiguar-logo-716EBD6442-seeklogo.com.png" type="image/png">
+    <link rel="icon" href="../../IMG/logo.jpeg" type="image/jpeg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anúncio</title>
     <link rel="stylesheet" href="../../CSS/styleAnuncio.css">
+    <script src="../../BACKEND/anuncio/chat.js"></script>
 </head>
 
 <body>
+
     <main class="container"> 
         <a href="index"><img src="../../IMG/36976.png" alt="" width=25></a>
         <h2>Anúncio</h2>
 
             <div class="input-field"><!--Colocar pra mostrar todas as imagens cadastradas para o anúncio-->
-                <img src=<?php echo "img/{$img}.jpg";?> alt="">
+                <img src=<?php echo "img/{$_SESSION["anuncio"]}.jpg";?> alt="">
                 <div class="underline"></div>
             </div>
            
@@ -86,19 +79,14 @@ $query1=$pdo->query("SELECT * FROM carros WHERE id_carro='{$img}'")->fetch(PDO::
                 <div class="underline"></div>
             </div>
             <div class="chat" id="containerChat">
-                <p><b>ola: </b> oi</p>
                 <!-- aqui vai aparecer o chat-->
 
             </div>
-        <form  enctype="" action="" method="post">
-            <input type="text" name="chat" class="caixa_chat">
+        <form  enctype="" action="envia" method="post">
+            <input type="text" name="chat"autocomplete="off" class="caixa_chat">
             <input type="submit" value="Enviar" class="btSub"> 
         </form>
     </main>
-    <script>
-        document.querySelector("form").addEventListener("submit",function(e){
-            e.preventDefault()
-        })
-    </script>
+    
 </body>
 </html>

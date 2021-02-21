@@ -6,7 +6,7 @@
 	if(empty($_POST["username"]) || empty($_POST["password"])) { 
 		$_SESSION['vaziu']=true;
 		unset($_SESSION['não_autenticado']);
-		header("location: ../../login");
+		header("location: ./login");
 		exit();
 	}
 	$login = $_POST['username'];
@@ -31,14 +31,14 @@
 		$_SESSION["senha"]=$senha;
 		unset($_SESSION["não_autenticado"]);//destruir a seção não_autenticado || usado para mensagem de erro
 		unset($_SESSION["vaziu"]);// destruir a seção vaziu || usado para mensagem de erro
-		header("location: ../../");//ir para outra pagina
+		header("location: ./");//ir para outra pagina
 		exit();
 	}
 	// se não existir voltarar para a pagina para efetuar login
 	else{
 		unset($_SESSION['vaziu']);//destruir a seção não_autenticado || usado para mensagem de erro
 		$_SESSION['não_autenticado']=true;//destruir a seção não_autenticado || usado para mensagem de erro
-		header("location: ../../login");//voltar para o index.php voltar pagina inicial
+		header("location: ./login");//voltar para o index.php voltar pagina inicial
 		exit();
 	}
 
