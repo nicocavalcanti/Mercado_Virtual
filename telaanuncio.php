@@ -10,11 +10,9 @@
 
 <body>
     <main class="container"> 
-        <a href="index.php"><img src="IMG/36976.png" alt="" width=25></a>
+        <a href="index"><img src="IMG/36976.png" alt="" width=25></a>
         <h2>Anúncio</h2>
-       
 
-        
             <div class="input-field"><!--Colocar pra mostrar todas as imagens cadastradas para o anúncio-->
                 <img src="https://s3-sa-east-1.amazonaws.com/carroaluguel-website/images/carros/doblo.png" alt="">
                 <div class="underline"></div>
@@ -71,7 +69,7 @@
                 <p>*Carro muito conservado e novo, para mais informações mande um chat ou um zap para 84 900000000*</p> 
                 <div class="underline"></div>
             </div>
-            <div class='chat' id='containerChat'>
+            <div class="chat" id="containerChat">
                 <p><b>ola: </b> oi</p>
                 <!-- aqui vai aparecer o chat-->
 
@@ -82,7 +80,7 @@
         </form>
     </main>
     <script>
-        document.querySelector('form').addEventListener("submit",function(e){
+        document.querySelector("form").addEventListener("submit",function(e){
             e.preventDefault()
         })
     </script>

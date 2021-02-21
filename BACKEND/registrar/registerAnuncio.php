@@ -24,8 +24,19 @@
     $num=rand(100000,999999);
     $data=date('Y-m-d H:i:s');
     $apel=$_SESSION['login'];
-//verificar se algum campo está vaziu
     
+    $conteudo='<?php
+session_start();
+include_once("../../BACKEND/connection.php");
+$_SESSION["anuncio"]=basename(__DIR__);//volta o nome do arquivo
+$_SESSION["url"]=$_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+$query=$pdo->query("SELECT * FROM anuncio WHERE id_carro=".$_SESSION["anuncio"])->fetch(PDO::FETCH_OBJ);
+$query1=$pdo->query("SELECT * FROM carros WHERE id_carro=".$_SESSION["anuncio"])->fetch(PDO::FETCH_OBJ);
+
+include("../../BACKEND/anuncio/tela.php");
+?>';
+//verificar se algum campo está vaziu
+
     if (empty($marca) || empty($modelo)) {
         # code...
         $_SESSION['vaziu']=true;
@@ -91,8 +102,11 @@
            
             
             if(isset($_FILES["arquivo"])){
-                mkdir("../../paginas/{$num}/img",0777,TRUE);
-                $cd="../../paginas/{$num}/img/";
+                mkdir("../../anuncios/{$num}/img",0777,TRUE);
+                $cd="../../anuncios/{$num}/img/";
+                
+                echo '../../anuncios/'.$num.'/index.php';
+                file_put_contents('../../anuncios/'.$num.'/index.php', $conteudo);
                 $img=count($_FILES['arquivo']['name']);
                 $n=0;
                 while($n<$img){

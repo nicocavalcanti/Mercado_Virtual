@@ -21,7 +21,7 @@
     if($result->rowCount() == 0){
         if (empty($nome) || empty($cidade)) {
             $_SESSION['vaziu']=true;
-            header("location: ../../register");
+            header("location: ./register");
             exit();
         }
         elseif (empty($contato) || empty($email)) {

@@ -1,5 +1,5 @@
 window.onload=function(){
-    function invisivel(){
+    function invisivel(){//auto apagar a div em 6 segundo
         try{
         document.querySelector("#erro").remove()
         }catch(e){}

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <?php 
 session_start();
+
 ?>
 <html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styleAnuciar.css">
+    <link rel="icon" href="./IMG/logo.jpeg" type="image/jpeg">
     <script src="JAVASCRIPT/interation.js"></script>
     <title>Anunciar</title>
 </head>
@@ -183,6 +185,11 @@ session_start();
                      <p><strong>Cadastrado Com Sucesso!</strong></p>
                   </div>";
             unset($_SESSION['cadastrado']);
+         }elseif(isset($_SESSION["jaCadastrado"])) {
+            echo " <div class='erro' id='erro'>
+                     <p><strong>Erro!</strong><br> Propaganda já cadastrada.</p>
+                  </div>";
+            unset($_SESSION["jaCadastrado"]);
          }
       ?>
 </body>

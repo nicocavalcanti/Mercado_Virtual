@@ -14,5 +14,4 @@
     	echo 'Não foi possivel conectar';
     	//$pdo->rollBack();
     }
-    
 ?>

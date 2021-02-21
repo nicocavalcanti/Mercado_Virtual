@@ -40,7 +40,7 @@ create table carros(
  create table anuncio(
  id_anuncio int not null auto_increment,
  apelido_usuario varchar(17) not null,
- id_carro char(6) not null,
+ id_carro char(6) not null unique,
  data datetime not null,
  estado varchar(30),
  cidade varchar(25),
@@ -52,7 +52,7 @@ create table carros(
  );
  
  -- select * from anuncio;
- -- drop table anuncio;
+-- drop table anuncio;
  
  create table pesquisa(
  id_pesquisa int not null auto_increment,
@@ -69,13 +69,13 @@ create table carros(
  -- drop table pesquisa;
  create table chat (
  id_chat int auto_increment,
- emissor varchar(17) not null,
- id_anuncio int not null,
- mensagem varchar(150),
- datta datetime not null,
+ de_quem varchar(17) not null unique,
+ para_quem varchar(12),
+ id_anuncio int,
+ mensagem text(120),
  primary key(id_chat),
- foreign key (id_anuncio) references anuncio(id_anuncio),
- foreign key (emissor) references usuarios(apelido_usuario)
-  
-
+ foreign key(id_anuncio) references anuncio(id_anuncio),
+ foreign key(de_quem) references usuarios (apelido_usuario),
+ foreign key(para_quem) references usuarios (apelido_usuario)
 );
+drop table chat;
