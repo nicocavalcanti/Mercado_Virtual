@@ -11,7 +11,7 @@ try{
         }elseif ($_SESSION["pagina"]=="register") {
             # code...
             $_SESSION["pagina"]="index";
-            header("location: .");
+            header("location: ../../");
         }
         
     }

@@ -20,7 +20,7 @@
         <main class="container">  
         <a href="index.php"><img src="IMG/36976.png" alt="" width=25></a>
             <h2>Login PotiCars</h2>
-            <form action="BACKEND/verificar/verifyLogin" method="post"> <!--post não mostra, o get mostra  -->
+            <form action="BACKEND/verificar/verifyLogin.php" method="post"> <!--post não mostra, o get mostra  -->
                 <div class="input-field">
                     <input type="text" name="username" id="username" placeholder="Usuário">
                     <div class="underline"></div>

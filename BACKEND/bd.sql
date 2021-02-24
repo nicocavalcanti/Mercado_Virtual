@@ -78,4 +78,4 @@ create table carros(
  foreign key(de_quem) references usuarios (apelido_usuario),
  foreign key(para_quem) references usuarios (apelido_usuario)
 );
-drop table chat;
+-- drop table chat;
