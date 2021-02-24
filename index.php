@@ -123,15 +123,25 @@
                 <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor 6</p></div>
                 </div>
             </div>
+<<<<<<< HEAD
+        </div>
+        <div class='seta voltar' id="n2"><i></i></div>
+        <div class='seta passar' id="n2"><i></i></div>
+    </div>
+    <p style='text-align:center' >Feito por Luiz, Paulo e Reinan</p>
+	<div class="rodape">
+    <p style='text-align:center' >Copyright © 2021-2021 PotiCars.com.br LTDA.</p>
+   
+    </div>
+=======
             <div class='seta voltar' id="n2"><i></i></div>
             <div class='seta passar' id="n2"><i></i></div>
         </div>-->
-
-        <div class="rodape">
+    <div class="rodape">
         <p style='text-align:center' >Feito por Luiz, Paulo e Reina</p>
         <p style='text-align:center' >Copyright © 2021-2021 PotiCars.com.br LTDA.</p>
     
-        </div>
+    </div>
     </div>
 </body>
 </html>
