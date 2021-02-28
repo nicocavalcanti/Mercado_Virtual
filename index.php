@@ -137,6 +137,7 @@
             <div class='seta voltar' id="n2"><i></i></div>
             <div class='seta passar' id="n2"><i></i></div>
         </div>-->
+        <button class="bt"> Anunciar</button><!--Adicionar isso aqui no index.php*/-->
     <div class="rodape">
         <p style='text-align:center' >Feito por Luiz, Paulo e Reinan</p>
         <p style='text-align:center' >Copyright © 2021-2021 PotiCars.com.br LTDA.</p>

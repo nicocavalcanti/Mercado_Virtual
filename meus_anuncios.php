@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://seeklogo.com/images/P/potiguar-logo-716EBD6442-seeklogo.com.png" type="image/png">
-    <title>PotiCars- Um Mercado Virtual Potiguar de Vendas Automotiva</title>
+    <title>Meus Anúncios</title>
     <link rel="stylesheet" href="CSS/styleMAnuncio.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="JAVASCRIPT/passarIMG.js"></script>
