@@ -182,3 +182,19 @@ a{
 }.enviar{
     margin-top: 10%;
 }
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, #2de278,  #008b56);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #2de278,  #008b56);
+}

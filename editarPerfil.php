@@ -45,7 +45,7 @@ include("BACKEND/verificar/verific.php");
                      <td><p><input type="text" value="<?php echo $nome->email;?>"></p></td>
                   </tr>
                   </table>
-                  <input type="submit" value="enviar" class="enviar">
+                  <input type="submit" value="enviar" class="Salvar">
                   
                </form>    
         </main>
