@@ -21,7 +21,7 @@ session_start();
 
         <form  enctype="multipart/form-data" action="BACKEND/registrar/registerAnuncio" method="post">
             <div class="input-field">
-                <input type="file" name="arquivo[]" Value="insira imagens" accept="image/*" multiple="multiple">
+                <input type="file" name="arquivo[]" Value="insira imagens" accept="image/*" multiple="multiple" required>
             </div>
             <div class="underline"></div>
             <div class="input-field">

@@ -6,13 +6,13 @@
       </label>
       <label class="logo">PotiCars</label>
       <ul>
-        <li><a  href="#">Home</a></li>
+        <li><a  href="./">Home</a></li>
         <li><a href="#">Pesquisar</a></li>
         <?php if(isset($_SESSION["login"])){?>
         <li><a href="anunciar">Anunciar</a></li>
         <?php } ?>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Sobre</a></li>
+        <li><a href="contato">Contato</a></li>
+        <li><a href="sobre">Sobre</a></li>
         <?php if(!isset($_SESSION["login"])){ ?>
         <li><a class="active"href="login">Entrar</a></li>
         <?php }?>

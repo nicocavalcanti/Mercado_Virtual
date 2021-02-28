@@ -36,19 +36,18 @@
                     while($linha=$anuncio->fetch()): 
                         $numero2++; 
                     ?>
-                    <div class="anunciototal" id='n<?php echo$numero1;?>'>
+                    <a href="anuncios/<?php echo $linha["id_carro"]?>"><div class="anunciototal" id='n<?php echo$numero1;?>'>
                         <div class="anuncio"><img src="<?php echo "anuncios/".$linha["id_carro"]."/img/".$linha['id_carro'].".jpg";?>" alt=""/>
                         <?php $carro=$pdo->query("SELECT * FROM carros 
                         WHERE id_carro='".$linha["id_carro"]."'")->fetch(PDO::FETCH_OBJ);?>
-                        <p><b>Marca: </b><?php echo $carro->marca." ";?> <b>Ano: </b><?php echo$carro->ano;?></p>
-                        <p><b>Preço: </b><?php echo $linha['preco_pedido'];?></p>
-                    </div>
-                    </div>
+                        <p><b>Marca: </b><?php echo $carro->marca;?>;<b> Ano: </b><?php echo$carro->ano;?></p>
+                        <p><b>Preço: </b><?php echo $linha['preco_pedido'];?>R$</p>
+                        </div>
+                    </div></a>
 
 
                 <?php
                  $numero++; 
-                    
                     if($numero==10){
                         
                         echo'</div>
@@ -67,76 +66,16 @@
                     }
                     
                     endwhile;
+                    echo $numero1;
+                    if($numero1<=1 or $numero!==0){
+                        echo '</div> 
+                        <div class="seta voltar" id="n'.($numero1).'" ><i></i></div>
+                        <div class="seta passar" id="n'.($numero1).'" ><i></i></div>';
+                        '';
+                    }
                     ?>
                 
-           <!-- <div class="ads">
-                <div class="anunciototal" id='n1'>
-                    <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-                <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor 1</p></div>
-                </div>
-                <div class="anunciototal" id='n1'>
-                    <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-                <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor 2</p></div>
-                </div>
-                <div class="anunciototal" id='n1'>
-                    <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-                <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor 3</p></div>
-                </div>
-                <div class="anunciototal" id='n1'>
-                    <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-                <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor 4</p></div>
-                </div>
-                <div class="anunciototal" id='n1'>
-                    <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-                <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor 5</p></div>
-                </div>
-                <div class="anunciototal" id='n1'>
-                    <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-                <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor 6</p></div>
-                </div>
-            </div>
-            <div class='seta voltar' id="n1" ><i></i></div>
-            <div class='seta passar' id="n1" ><i></i></div>
-            <div class="ads">
-                <div class="anunciototal" id='n2'>
-                    <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-                <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor 1</p></div>
-                </div>
-                <div class="anunciototal" id='n2'>
-                    <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-                <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor 2</p></div>
-                </div>
-                <div class="anunciototal" id='n2'>
-                    <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-                <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor 3</p></div>
-                </div>
-                <div class="anunciototal" id='n2'>
-                    <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-                <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor 4</p></div>
-                </div>
-                <div class="anunciototal" id='n2'>
-                    <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-                <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor 5</p></div>
-                </div>
-                <div class="anunciototal" id='n2'>
-                    <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
-                <div class="descricao"><p style='text-align:center' >nomeCarro, ano, valor 6</p></div>
-                </div>
-            </div>
-<<<<<<< HEAD
-        </div>
-        <div class='seta voltar' id="n2"><i></i></div>
-        <div class='seta passar' id="n2"><i></i></div>
-    </div>
-    <p style='text-align:center' >Feito por Luiz, Paulo e Reinan</p>
-	<div class="rodape">
-    <p style='text-align:center' >Copyright © 2021-2021 PotiCars.com.br LTDA.</p>
-   
-    </div>
-=======
-            <div class='seta voltar' id="n2"><i></i></div>
-            <div class='seta passar' id="n2"><i></i></div>
-        </div>-->
+          
     <div class="rodape">
         <p style='text-align:center' >Feito por Luiz, Paulo e Reinan</p>
         <p style='text-align:center' >Copyright © 2021-2021 PotiCars.com.br LTDA.</p>

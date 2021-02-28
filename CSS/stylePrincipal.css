@@ -29,6 +29,11 @@ nav ul{
     float: right;
     margin-right: 20px;
 
+}a,a:active{
+    text-decoration: none;
+}
+p{
+    color: black;
 }
 nav ul li{
     display: inline;
