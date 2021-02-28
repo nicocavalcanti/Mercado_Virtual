@@ -10,11 +10,62 @@
 }
 body{
     font-family: "Poppins", sans-serif;
-    display: flex;
+    display: flexbox;
+}
+nav{
+    background:#008b56;
+    height: 80px;
+    width: 100%;
+    z-index: 10;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 20px; 
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+a.active,a:hover{
+    background: #2de278;
+    transition: .5s;
+
+}
+.checkbnt{
+   font-size: 30px;
+   color: white;
+   float: right;
+   line-height: 80px;
+   margin-right: 40px;
+   cursor: pointer; 
+   display: none; 
+}
+#check{
+    display: none;
+
 }
 .tudo{
     width: 100%;
 }
+
 .meio{
     margin: auto;
     margin-top: 2%;
@@ -22,10 +73,54 @@ body{
 
     overflow: hidden;
 }
-.rodape{
-    display: block;
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
 }
-.meio{
-    display: block;
-    margin-top: 18vh;
+@media (max-width: 858px){
+    .checkbnt{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#2de278;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.7s;
+        z-index: 10;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }nav{
+        top:0;
+        position: fixed;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #ebebe0e0;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    
+    }.rodape{
+        display: block;
+    }.meio{
+        display: block;
+        margin-top: 18vh;
+    }
 }
