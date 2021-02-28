@@ -5,23 +5,25 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-
-
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 body{
-    padding-top: 5vh;
     background-color: chartreuse;
     background-size:cover;
     background-repeat: no-repeat;
-    display: flex;
+    display: flexbox;
     align-items: center;
     justify-content: center;
 }
 
 main.container {
-    margin-top: 15vh;
+    margin: auto;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
     background: white;
-    max-width: 350px;
+    max-width: 450px;
     /*min-height: 40vh;*/
     padding: 2rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
@@ -30,7 +32,8 @@ main.container {
 
 main h2 {
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
     position: relative;
 }
 
@@ -51,14 +54,7 @@ form {
 
 form .input-field:first-child {
     margin-bottom: 1.5rem;
-}
-
-
-
-
-
-
-label.logo{
+}label.logo{
     color: white;
     font-size: 35px;
     line-height: 80px;
@@ -112,6 +108,12 @@ a.active,a:hover{
 	width:77vw;
 
     overflow: hidden;
+}nav{
+    margin-top: 0;
+    background:#008b56;
+    height: 80px;
+    width: 100%;
+    z-index: 10;
 }
 @media (max-width: 952px){
     label.logo{
@@ -163,4 +165,14 @@ a.active,a:hover{
         display: block;
         margin-top: 18vh;
     }
+}
+a{
+    color: #000;
+}p{
+    font-size: 1em;
+}input{
+    font-size: 1em;
+    width: 100%;
+}.enviar{
+    margin-top: 10%;
 }
