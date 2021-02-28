@@ -19,7 +19,7 @@
 
             <div class="input-field" id="img"><!--Colocar pra mostrar todas as imagens cadastradas para o anúncio-->
                 <div class="img">
-                    <img src="<?php echo "img/{$_SESSION["anuncio"]}.jpg";?>" alt="" width= "400" height="400">
+                    <img src="<?php echo "img/{$_SESSION["anuncio"]}.jpg";?>" alt="" width= "600" height="400">
                 </div>
                 <?php
                 $n=1;

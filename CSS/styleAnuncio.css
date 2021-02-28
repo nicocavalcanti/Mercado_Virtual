@@ -177,7 +177,7 @@ background: #555;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     overflow-x: hidden;
-    width: 400px;
+    width: 600px;
 }.img{
    position: relative;
    left: 0%;
