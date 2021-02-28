@@ -13,6 +13,7 @@
         <?php } ?>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Sobre</a></li>
+        <li><a href="Perfil.html">Meu Perfil</a></li>
         <?php if(!isset($_SESSION["login"])){ ?>
         <li><a class="active"href="login">Entrar</a></li>
         <?php }?>

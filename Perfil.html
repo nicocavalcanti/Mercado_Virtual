@@ -8,39 +8,40 @@
     <title>Perfil de Usuario</title>
 </head>
 <body>
-    <div class="tudo">
+    
         <?php
             include("header/header.php");
         ?>
         
-        <div class="meio">
-            <div class="anuncios">
-                <p>Meus Anúncios</p>
-                <a href="meus_anuncios.php" target="_blank">Clique aqui para ver seus anúncios</a>
-            </div>
-            <div class="edita">
-                <p>Editar Meu Perfil</p>
-                <a href="editarPerfi.html" target="_blank">Edite seu Perfil</a>
-            </div>
-        </div>
         
-        <div class="rodape">
-            <p style='text-align:center' >Feito por Luiz, Paulo e Reinan</p> 
-            <p style='text-align:center' >Copyright © 2021-2021 PotiCars.com.br LTDA.</p>
-        
-        </div>
+            <main class="container">
+                <form action="">
+            <!--Caso não esteja logado, Fazer Login -  Colocar um IF sla-->
+                
+               
+                <h2>Meus Dados</h2>
+                        <p>Nome:</p>
+                        <p>Apelido:</p>
+                        <p>cidade:</p>
+                        <p>Contato:</p>
+                        <p>E-Mail:</p>
+                  
+                    <h2 >Editar Meu Perfil</h2>
+                   <a href="editarPerfil.html"  target="_blank" >Clique aqui e edite seu Perfil</a>
+               
+                    <h2 >Meus Anúncios</h2>
+                 <a href="meus_anuncios.php" target="_blank" >Clique aqui para ver seus anúncios</a>
+                
+            </form>
+
+       
+        </main>
+       
 
     
         
-    </div>
-    <p>Add o menu aqui</p>
-
-    <p>Meus Anúncios </p>
-    <p>Colocar pagina meus_anuncios aqui</p>
-    <hr>
-    <p>Editar Perfil</p>
-    <p>Abrir Registe com os dados que estão cadastrados e ter a opção de editar esses dados (UPDATE) </p>
-    <p>Sair</p>
+    
+    
     
 </body>
 </html>
