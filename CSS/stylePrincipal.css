@@ -141,11 +141,10 @@ img{
     border-bottom: 10px solid transparent;
     float:left; 
 }.voltar{
-    left: 9.8vw;
+    
     display: none;
     transition: 2s right;
 }.passar{
-    right: 9.8vw;
     transition: 2s left;
 }
 @media (max-width: 952px){
@@ -196,5 +195,26 @@ img{
         display: block;
         margin-top: 18vh;
     }
+}
+.bt{/*Adicionar isso aqui no index.php*/
+    width: 250px;
+    text-align: center;
+    padding: 10px 15px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: #008b56;
+    font-size: 18px;
+    transition-duration: 0.4s;
+
+}
+
+
+.bt:hover{/*Adicionar isso aqui no index.php*/
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #2de278,  #008b56);
+}.passaVolta{
+    display: block;
+    height: 50px;
+    width: 100%;
 }
 

@@ -69,13 +69,14 @@
                     echo $numero1;
                     if($numero1<=1 or $numero!==0){
                         echo '</div> 
+                        <div class="passaVolta">
                         <div class="seta voltar" id="n'.($numero1).'" ><i></i></div>
-                        <div class="seta passar" id="n'.($numero1).'" ><i></i></div>';
-                        '';
+                        <div class="seta passar" id="n'.($numero1).'" ><i></i></div>
+                        </div>';
                     }
                     ?>
                 
-          
+
     <div class="rodape">
         <p style='text-align:center' >Feito por Luiz, Paulo e Reinan</p>
         <p style='text-align:center' >Copyright © 2021-2021 PotiCars.com.br LTDA.</p>
