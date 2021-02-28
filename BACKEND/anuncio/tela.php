@@ -8,6 +8,7 @@
     <title>Anúncio</title>
     <link rel="stylesheet" href="../../CSS/styleAnuncio.css">
     <script src="../../BACKEND/anuncio/chat.js"></script>
+    <script src="../../BACKEND/anuncio/passarIMG.js"></script>
 </head>
 
 <body>
@@ -16,11 +17,39 @@
         <a href="index"><img src="../../IMG/36976.png" alt="" width=25></a>
         <h2>Anúncio</h2>
 
-            <div class="input-field"><!--Colocar pra mostrar todas as imagens cadastradas para o anúncio-->
-                <img src=<?php echo "img/{$_SESSION["anuncio"]}.jpg";?> alt="">
-                <div class="underline"></div>
+            <div class="input-field" id="img"><!--Colocar pra mostrar todas as imagens cadastradas para o anúncio-->
+                <div class="img">
+                    <img src="<?php echo "img/{$_SESSION["anuncio"]}.jpg";?>" alt="" width= "600" height="400">
+                </div>
+                <?php
+                $n=1;
+                $cond=true;
+                $di=new FilesystemIterator("img/");
+                //echo iterator_count($di);
+                for($n;$n<iterator_count($di); $n++) {
+                        echo'<div class="img" id="im">
+                        <img src="img/'.$_SESSION["anuncio"].'('.$n.').jpg" alt=""width= "400" height="400">
+                        </div>';
+                }?>
+                
+                
             </div>
-           
+            <div class="input-field">
+                <div class="box">
+                    <?php  
+                    $n=1;
+                    $cond=true;
+                    //echo iterator_count($di);
+                    for($n;$n<iterator_count($di); $n++){
+                        if($n===1){
+                            echo'<input type="radio" name="slide" class="rad" checked>';
+                        }
+                        echo'<input type="radio" name="slide"> ';
+
+                    }?>
+                </div>
+            </div>
+            <div class="underline"></div>
             <div class="input-field">
                 Marca: <p><?php echo $query1->marca;?></p>
                 <div class="underline"></div>

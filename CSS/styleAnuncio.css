@@ -171,4 +171,25 @@ background: #555;
     outline: none;
     color: rgba(0, 0, 0, 0.9);
     font-size: 0.88rem;
+}#img{
+    list-style-type: none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    overflow-x: hidden;
+    width: 600px;
+}.img{
+   position: relative;
+   left: 0%;
+   transition: 0.5s;
+    
+}.box{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+}input[type="radio" i] {
+    margin-left: 5px;
 }
