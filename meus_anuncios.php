@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://seeklogo.com/images/P/potiguar-logo-716EBD6442-seeklogo.com.png" type="image/png">
+    <link rel="icon" href="./IMG/logo.jpeg" type="image/jpeg">
     <title>Meus Anúncios</title>
     <link rel="stylesheet" href="CSS/styleMAnuncio.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -32,7 +32,7 @@
                 while($linha=$query->fetch()):  
             ?>
                 <div class="pessoa">
-                    <a href="anuncios/<?php echo$linha['id_carro'];?>"><?php echo$linha['id_carro'];?></a>
+                    <a href="anuncios/<?php echo$linha['id_carro'];?>"><img src=<?php echo"anuncios/".$linha['id_carro']."/img/".$linha['id_carro'].".jpg";?> alt=""><?php echo$linha['id_carro'];?></a>
                 </div>
                 
             <?php endwhile;?>
