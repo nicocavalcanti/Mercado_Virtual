@@ -36,19 +36,18 @@
                     while($linha=$anuncio->fetch()): 
                         $numero2++; 
                     ?>
-                    <div class="anunciototal" id='n<?php echo$numero1;?>'>
+                    <a href="anuncios/<?php echo $linha["id_carro"]?>"><div class="anunciototal" id='n<?php echo$numero1;?>'>
                         <div class="anuncio"><img src="<?php echo "anuncios/".$linha["id_carro"]."/img/".$linha['id_carro'].".jpg";?>" alt=""/>
                         <?php $carro=$pdo->query("SELECT * FROM carros 
                         WHERE id_carro='".$linha["id_carro"]."'")->fetch(PDO::FETCH_OBJ);?>
-                        <p><b>Marca: </b><?php echo $carro->marca." ";?> <b>Ano: </b><?php echo$carro->ano;?></p>
-                        <p><b>Preço: </b><?php echo $linha['preco_pedido'];?></p>
-                    </div>
-                    </div>
+                        <p><b>Marca: </b><?php echo $carro->marca;?>;<b> Ano: </b><?php echo$carro->ano;?></p>
+                        <p><b>Preço: </b><?php echo $linha['preco_pedido'];?>R$</p>
+                        </div>
+                    </div></a>
 
 
                 <?php
                  $numero++; 
-                    
                     if($numero==10){
                         
                         echo'</div>
@@ -67,8 +66,17 @@
                     }
                     
                     endwhile;
+                    echo $numero1;
+                    if($numero1<=1 or $numero!==0){
+                        echo '</div> 
+                        <div class="passaVolta">
+                        <div class="seta voltar" id="n'.($numero1).'" ><i></i></div>
+                        <div class="seta passar" id="n'.($numero1).'" ><i></i></div>
+                        </div>';
+                    }
                     ?>
                 
+<<<<<<< HEAD
            <!-- <div class="ads">
                 <div class="anunciototal" id='n1'>
                     <div class="anuncio"><img src="https://i.vrum.com.br/JyKahLylgVfhOkEFuZfxB8W03NQ=/675x/smart/imgsapp.estadodeminas.vrum.com.br/app/noticia_128576568202/2020/09/16/55316/20200915164159518844e.jpg" alt=""></div>
@@ -138,6 +146,9 @@
             <div class='seta passar' id="n2"><i></i></div>
         </div>-->
         
+=======
+
+>>>>>>> 4ea224a8522dc3adfbb5dbbfd5efbff57dac464e
     <div class="rodape">
         <p style='text-align:center' >Feito por Luiz, Paulo e Reinan</p>
         <p style='text-align:center' >Copyright © 2021-2021 PotiCars.com.br LTDA.</p>
