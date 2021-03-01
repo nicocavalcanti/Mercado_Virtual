@@ -19,13 +19,9 @@ body{
 }
 
 main.container {
-<<<<<<< HEAD
-    /*margin-top: 15vh;*/
-=======
     margin: auto;
     margin-top: 7vh;
     margin-bottom: 7vh;
->>>>>>> be15b974f10cac72c10316f18b21801d6268a0f6
     background: white;
     max-width: 450px;
     /*min-height: 40vh;*/
@@ -103,8 +99,6 @@ a.active,a:hover{
 
 }
 .tudo{
-    background-color:red ;
-
     width: 100%;
 }
 

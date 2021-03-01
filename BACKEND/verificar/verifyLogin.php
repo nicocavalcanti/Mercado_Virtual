@@ -24,10 +24,10 @@
 	//verificar a quantidades de valores vai voltar do banco de dados
 	if($result->rowCount() == 1){
 		//retornar valor do banco de dados
-		$nome=$pdo->query("SELECT nome from usuarios WHERE 
+		$nome=$pdo->query("SELECT * from usuarios WHERE 
 		apelido_usuario='{$login}' OR email='{$login}' AND senha='{$senha}'")->fetch(PDO::FETCH_OBJ);
 		$_SESSION["user"]=$nome->nome;
-		$_SESSION["login"]=$login;
+		$_SESSION["login"]=$nome->apelido_usuario;
 		$_SESSION["senha"]=$senha;
 		unset($_SESSION["não_autenticado"]);//destruir a seção não_autenticado || usado para mensagem de erro
 		unset($_SESSION["vaziu"]);// destruir a seção vaziu || usado para mensagem de erro
