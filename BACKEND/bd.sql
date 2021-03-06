@@ -9,7 +9,7 @@ senha Varchar(40) not null,
 nome varchar(55) not null,
 cidade varchar(40) not null,
 email varchar(50)not null unique,
-numero_celular char(14),
+numero_celular varchar(20),
 Primary Key (apelido_usuario)
 );
 
