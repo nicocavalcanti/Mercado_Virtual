@@ -72,6 +72,7 @@ a.active,a:hover{
 	width:77vw;
 
     overflow: hidden;
+
 }
 @media (max-width: 952px){
     label.logo{
@@ -116,9 +117,7 @@ a.active,a:hover{
     }
     #check:checked ~ ul{
         left: 0;
-    
-    }.rodape{
-        display: block;
+
     }.meio{
         display: block;
         margin-top: 18vh;
