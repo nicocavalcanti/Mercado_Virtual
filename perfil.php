@@ -44,6 +44,10 @@ include("BACKEND/verificar/verific.php");
                      <td><p><strong>E-Mail: </strong></p> </td> 
                      <td><p><?php echo $nome->email;?></p></td>
                   </tr>
+                  <tr>
+                     <td><p><strong><a href="">Sair</a> </strong></p> </td> 
+                     <td></td>
+                  </tr>
                   </table>
                   
                     <h2 >Editar Meu Perfil</h2>
