@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: chartreuse;
+    background-color: rgba(192, 240, 180, 0.76);
     background-size:cover;
     background-repeat: no-repeat;
     display: flexbox;
