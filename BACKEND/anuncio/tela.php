@@ -76,6 +76,7 @@
                 KM rodados: <p><?php echo $query1->quilometragem;?></p>
                 <div class="underline"></div>
             </div>
+            
             <div class="input-field">
                 Preço: <p><?php echo $query->preco_pedido;?></p>
                 <div class="underline"></div>
@@ -100,6 +101,10 @@
             <div class="input-field">
                 Combustivel: <p ><?php echo $query1->combustivel;?> </p>
                
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">                
+                Contato: <p><?php echo $query1->quilometragem;?></p><!--AQUIIIIII-->
                 <div class="underline"></div>
             </div>
             <div class="input-field"><!--Olha o size colocar de acordo com o tamanho texto -->
