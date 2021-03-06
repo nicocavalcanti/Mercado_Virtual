@@ -14,7 +14,7 @@
 <body>
 
     <main class="container"> 
-        <a href="index"><img src="../../IMG/36976.png" alt="" width=25></a>
+        <a href="../../"><img src="../../IMG/36976.png" alt="" width=25></a>
         <h2>Anúncio</h2>
 
             <div class="input-field" id="img"><!--Colocar pra mostrar todas as imagens cadastradas para o anúncio-->
