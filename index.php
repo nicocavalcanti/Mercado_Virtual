@@ -66,7 +66,7 @@
                     }
                     
                     endwhile;
-                    echo $numero1;
+                    //echo $numero1;
                     if($numero1<=1 or $numero!==0){
                         echo '</div> 
                         <div class="passaVolta">

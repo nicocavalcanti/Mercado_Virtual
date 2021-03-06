@@ -45,7 +45,7 @@ include("BACKEND/verificar/verific.php");
                      <td><p><?php echo $nome->email;?></p></td>
                   </tr>
                   <tr>
-                     <td><p><strong><a href="">Sair</a> </strong></p> </td> 
+                     <td><p><strong><a href="logout">Sair</a> </strong></p> </td> 
                      <td></td>
                   </tr>
                   </table>
