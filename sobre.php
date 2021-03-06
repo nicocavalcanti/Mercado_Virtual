@@ -15,16 +15,12 @@
     <div class="meio">
        
         <p style="text-align: center;">
-            <p style="text-align: center;"> Site desenvolvido para fins acadêmicos </p>
-                Mais especificamente para a disciplina de PI - Programação para a Internet do curso de tecnico integrado em Informatica do IFRN - Campus Nova Cruz.
+            <p style="text-align: center;"> Site desenvolvido para fins acadêmicos 
+                Mais especificamente para a disciplina de PI - Programação para a Internet do curso de tecnico integrado em Informatica do IFRN - Campus Nova Cruz.</p>
         
         </p>
     </div>
-    <div class="rodape">
-        <p style='text-align:center' >Feito por Luiz, Paulo e Reinan</p>
-        <p style='text-align:center' >Copyright © 2021-2021 PotiCars.com.br LTDA.</p>
-
-    </div>
+    
     </div>
     
 </body>

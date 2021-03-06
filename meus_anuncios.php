@@ -39,11 +39,7 @@
             </div>
         </div>
         
-        <div class="rodape">
-            <p style='text-align:center' >Feito por Luiz, Paulo e Reinan</p> 
-            <p style='text-align:center' >Copyright © 2021-2021 PotiCars.com.br LTDA.</p>
         
-        </div>
 
     
         
