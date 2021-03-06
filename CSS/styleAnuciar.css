@@ -8,7 +8,7 @@
 }
 body {
     /*background: linear-gradient(45deg, #2de278, #008b56);*/
-    background-image: url(https://viagemeturismo.abril.com.br/wp-content/uploads/2016/12/7994340223_15e4a42c45_k4.jpeg);
+    background: rgba(192, 240, 180, 0.76);;
     /*background: rgba(0, 0, 0, 0.2);*/
     background-size:cover;
     background-repeat: no-repeat;
